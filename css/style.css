@@ -1,0 +1,2720 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size:.8em;
+    line-height:1.6em;
+}
+
+img {
+    width:100%;
+    height:auto;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ===== MOBILE ==== MOBILE ==== MOBILE ===== */
+/* ===== MOBILE ==== MOBILE ==== MOBILE ===== */
+/* ===== MOBILE ==== MOBILE ==== MOBILE ===== */
+
+/* ============= NAVIGATION ============= */
+   /* http://www.w3schools.com/howto/howto_js_topnav.asp */    
+     /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:767px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:767px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+    
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+ /* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #092c58;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+ul.topnav li a i {
+    font-size: 1.5em;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+    color: #092c58;
+    background-color: none;
+}
+
+.home-button li {
+    font-family: 'Caveat';
+}
+/* ============== FOOTER ===============*/
+
+.footer {
+    background:#f0f0f0;
+}
+
+.social {
+    width:100%;
+    position: /*fixed*/;
+    bottom:0;
+    margin: 0;
+    padding: 8% 0 0 0;
+}
+
+.social i {
+    font-size: 2em;
+    padding: 2% 2% 2% 2%;
+    color: #092c58;
+}
+
+.social a:hover {
+    color:#fff;
+    background: #3f8fe6;
+}
+
+
+.footer-nav {
+    padding: 3% 0 5% 0;  
+}
+
+.footer-nav ul {
+    list-style:none;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.footer-nav ul li{
+    text-align: center;
+    margin: 0 15% 0 0;   
+    padding: 0 0 1% 0;
+
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color:#6887f0;
+}
+
+.footer-nav ul li a:hover {
+    padding: 0 0 1px 0;
+    border-bottom:  1px #333 solid;
+}
+
+.footer-copyright {
+    text-align: center;
+    background:#f0f0f0;
+}
+
+.footer-copyright i {
+    font-size: .8em;
+    color:#cbcaca;  
+    padding: 0 5% 0 0;    
+}
+
+.year {
+    color:#cbcaca; 
+    display:inline-block;
+    margin:0 0 0 -4%;
+    font-size: .8em;
+    font-family: 'Open Sans';
+}
+
+.copyright {
+    display:inline-block;
+}
+
+.copyright p { 
+    font-family: 'Open Sans';
+    font-size: .8em;
+    color:#cbcaca;    
+}
+
+/* ============= BACKGROUND ============= */
+#home-background {
+	background: url('../img/P7260240.JPG')no-repeat center center fixed; 
+    /*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+    background-size: cover;
+}
+
+/* ============== REGULAR CTA BUTTON on white ===========*/
+.cta {
+    width:70%;
+    margin:0;
+}
+
+.cta a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 7% 8% 7% 8%;
+    background: #092c58;
+    font-size: 1em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;/* for open sans*/
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px solid #092c58;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.cta a:hover {
+    background: #3f8fe6;
+    color:#fff;
+    border: 2px solid #3f8fe6;
+;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+/* ============= HOME PAGE ============= */
+
+.home-container{
+}
+
+.name {
+}
+
+.name h1 {
+    margin: 8% 0 0 0;
+    font-family: 'Caveat';
+    font-size: 3.8em;
+    color: #fff;
+    text-align: center;
+}
+
+.job-title p{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    color:#fff;
+    font-size:1.3em;
+    width: 100%;
+    margin:0;
+    text-align: center;
+}
+
+.home-cta {
+    width:70%;
+    margin: 60% 15% 0 15%;
+}
+
+.home-cta a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 7% 8% 7% 8%;
+    background: none;
+    opacity:;
+    font-size: 1em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px #fff solid; 
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+
+}
+
+.home-cta a:hover {
+    background: #092c58;
+    color:#fff;
+    border: 2px #092c58 solid; 
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.skills-preview {
+    margin: 30% 0 0 0;
+    padding: 0 0 8% 0;
+    width:100%;
+    background: #fff;
+}
+
+.section-title {
+    
+}
+
+.section-title h1 {
+    margin: 5% 0 8% 0;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    padding: 8% 0 0 0;
+}
+
+
+.line {
+    border-color:#999;
+    width:80%;
+    margin:0 10% 0 10%
+}
+.skill {
+    width:100%;   
+    padding: 0 0 5% 0;
+}
+
+.skill h1 /* just using this to do text-align for the icon i*/ {
+
+    text-align: center;
+
+    
+}
+
+.skill i {
+    font-size: 3em;
+    color: #3f8fe6;
+}
+
+.skill h2 {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skill p {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 5% 0 5%;
+    padding: 0 0 0 0;
+
+}
+
+.home-bottom {
+    width:100%;
+    background: #3f8fe6;   
+    margin: 0;
+    padding: 0 0 20% 0;
+}
+
+.home-bottom h2 {
+    margin:0 5% 0 5%;
+    padding:8% 0 5% 0 ;
+    font-family: 'Open Sans';
+    font-weight: 400; /* normal */
+    color:#fff;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+
+.cta-bottom {
+    width:70%;
+    margin: 10% 15% 0 15%;
+}
+
+.cta-bottom a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 7% 8% 7% 8%;
+    background: #fff;
+    font-size: 1em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#3f8fe6;
+    text-transform:uppercase;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.cta-bottom a:hover {
+    background: #092c58;
+    color:#fff;
+    /*opacity: 80%;*/
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+/* ----------- About Page - MOBILE ------------- */
+
+.intro {
+   padding: 0 0 8% 0; 
+}
+
+/*.section-header h1 {
+    font-family:'Caveat';
+    font-size: 4em;
+    color: #000;
+    text-align:center;
+    margin: 5% 0 0 0;
+    padding:0;
+    text-transform: none;
+} 
+
+.section-header h3 {
+    font-family:'Julius Sans One';
+    font-size: 1em;
+    margin: 0 0 5% 0;
+    padding:0; 
+    text-align:center;
+}*/
+
+.intro-img {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/intro-img.jpg'); /*open to changing photo*/
+    background-size:cover;
+    background-position:center;
+    background-repeat: none;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    margin:auto; /*keeps it centered*/
+    border: 0px solid #4d9cee;
+    
+}
+    
+.sf h2 {
+    font-family:'Caveat';
+    color: #092c58;
+    font-size: 2.4em;
+    text-align:center;
+    margin:auto;
+    padding: 3% 0 0 0;
+}
+
+.sf h1 {
+    font-family:'Caveat';
+    color: #092c58;
+    font-size: 3em;
+    text-align:center;
+    margin: 0 0 8% 0;
+    padding: 0 0 0 0;
+}
+
+.about-cta {
+    padding: 3% 0 8% 0;
+    margin: 12% 0 0 0;
+}
+
+.about-body {
+    padding: 0 0 0 0;
+}
+
+.about-me{
+}
+
+.about-me p { 
+    font-family:'Open Sans';
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0;
+    width:94%;
+    background-color: #fff;
+    margin:0 3% 3% 3%;
+}
+
+.resume {
+    width:50%;
+    padding: 5% 0 5% 0;
+    margin: 0 25% 0 25%;
+}
+.resume-icon {
+    display: inline-block;
+    margin: 0 0 0 3%;
+}
+
+.resume-icon i {
+    font-size: 3em;
+
+}
+
+.resume-icon a {
+    background: none;
+    color:#3f8fe6;
+
+}
+
+/*.resume-icon a:hover {
+    background: none;
+    color:#092c58;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+  /*  -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}*/
+
+
+.resume-cta {
+    width:20%;
+    display: inline-block;
+}
+.resume-cta a {
+    width:;
+    text-align: left;
+    text-decoration: none;
+    padding: 7% 8% 2% 8%;
+    background: none;
+    font-size: 1em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#3f8fe6;
+    text-transform:uppercase;
+    /*border: 2px #333 solid; */
+    /*box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+}
+
+.about-design p {
+    font-family:'Open Sans';
+    padding: 0 2% 0 2%;
+    background-color: #fff;
+    margin:0 0 3% 0;   
+}
+
+
+
+/*.resume-cta a:hover {
+    background: none;
+    color:#092c58;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+  /*  -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}*/
+
+
+.about-background p {
+    font-family:'Open Sans';
+    font-weight: 400;
+    padding: 0 2% 8% 2%;
+    background-color: #fff;
+    margin:0 0 3% 0;   
+}
+
+.bottom {
+    width:100%;  
+    margin: 0;
+    background:none; 
+    padding: 0 0 8% 0;
+}
+
+.bottom h2 {
+    margin:0 5% 0 5%;
+    padding:8% 0 5% 0 ;
+    font-family: 'Open Sans';
+    color:#000;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+
+/*---------- Portfolio Page - MOBILE ----------------*/
+
+.portfolio {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 2% 0% 2%;
+    padding: 3% 0 0 0;
+}
+
+.portfolio h1 {
+    font-family: 'Caveat';
+    font-size: 4em;
+    margin: 0 0 0 0;
+    text-align: center;
+    
+}
+
+.portfolio h3 {
+    font-family:'Julius Sans One';
+    font-size: 1em;
+    margin: 0 0 8% 0;
+    text-align: center;
+}
+
+.section-title h3 { 
+    width:100%;
+    font-family: 'Julius Sans One';
+    color: #000;
+    background:#fff;
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.portfolio-feed {
+    margin:0;
+    width:98%;
+}
+
+
+.project-preview img {
+    width: 98%;
+    margin-bottom: 3%;
+    padding: 0 0 5% 0;
+ }
+
+.project-preview .line {
+    border-color: #999;
+    margin: 0 0 15px 0;
+    width: 15%;
+}
+
+.project-preview h2 {
+    font-family: 'Merriweather';
+    color: #092c58;
+    margin: 3% 0 0 0; 
+}
+
+.project-preview h4 {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    text-transform: none;
+    font-size: 1.2em;
+    padding: 2% 0 5% 0;
+    margin: 0 0 10% 0;
+ }
+
+.project-preview a {
+    text-decoration: none;
+    color: #4d9cee;
+} 
+
+
+/* ---------- project details page - MOBILE ---------------*/
+
+
+.project-detail {
+    width:96%;
+    margin:0;
+}
+
+.project-img img {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 3% 0 0 0;
+ }
+
+.project-detail-top h1 {
+    font-family: 'Merriweather';
+    color: #092c58;
+    margin: 5% 0 5% 0; 
+    font-size: 1.5em;
+}
+
+.project-detail-top h4 {
+    font-family: 'Julius Sans One';
+    font-size: 1em;
+    color:#4d9cee;
+    padding: 0 0 5% 0;
+    margin: 0 0 5% 0;
+}
+
+.case-study {
+    padding: 5% 0 0 0;
+}
+
+
+.case-study h2 {
+    font-family: 'Julius Sans One';
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    color:#092c58;
+     
+ }
+
+.case-study p {
+    font-family:'Open Sans';
+    background-color: #fff;
+    font-size:1em;
+    line-height: 1.7em;
+}
+
+.case-study ul li {
+    font-family:'Open Sans';
+    background-color: #fff;
+    font-size:1em;
+    line-height: 1.7em;
+}   
+
+.case-study img {
+    padding: 0 0 5% 0;
+}
+
+.project-button {
+    margin: 15% 0 0 0;
+    padding: 0 0 10% 0;
+}
+
+.project-button a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5% 8% 5% 8%;
+    background: #092c58;
+    font-size: 1em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px solid #092c58;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.project-button a:hover {
+    background: #3f8fe6;
+    color:#fff;
+    border: 2px solid #3f8fe6;
+}
+
+.back-services {
+    margin: 10% 0 5% 0;    
+}
+
+.back-services a {
+    font-family: 'Open Sans';
+    color:#3f8fe6;
+    text-decoration: none;
+    padding: 0 0 1% 0;
+    text-transform: uppercase;
+}
+
+.back-services a:hover {
+    color:#3f8fe6;
+    text-transform: uppercase;
+    border-bottom: 1px #092c58 solid;
+}
+
+/* -------------------- Contact Page - MOBILE ---------------- */
+.contact-title {
+    display:none;
+}
+
+.contact h1 {
+    font-family: 'Caveat';
+    font-size: 4em;
+    margin: 0 0 0 0;
+    text-align: center;
+    padding: 3% 0 0 0;
+    
+}
+
+.contact h3 {
+    font-family:'Julius Sans One';
+    font-size: 1em;
+    margin: 0 0 5% 0;
+    text-align: center;
+}
+
+.details-container {
+    width: 100%;
+    margin:0 0 5% 0;
+    padding: 0 0 8% 0;
+}
+
+    
+.contact-details {
+    width:100%;
+    margin:auto;
+    padding: 5% 0 0 0;
+    }
+
+.contact-line {
+    border-color: #092c58;
+    margin: 0 0 15px 0;
+    width: 100%;
+}
+
+.contact-details img {
+    padding: 3% 0 3% 0;
+}
+
+.contact-details h2 {
+    font-family: 'Merriweather';
+    font-size: 1.2em;
+    width: 100%;
+    }
+
+.contact-details p {
+    font-family: 'Open Sans';
+    font-size: 1em;
+    width: 100%;
+
+}
+
+.detail-button {
+    width:70%;
+    margin: 2% 15% 0 15%;
+}
+
+.detail-button a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 7% 8% 7% 8%;
+    background: #092c58;
+    font-size: 1em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#fff;
+    text-transform:uppercase;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.detail-button a:hover {
+    background: #3f8fe6;
+    color:#fff;
+    opacity: 80%;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500mdetail-button 
+
+}
+   
+    
+.contact-form {
+    width:96%;
+    margin: 0 0 0 0;
+    padding: 5% 0 3% 0;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #4d9cee;
+    font-family: 'Julius Sans One';
+    color: #fff;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+#message input[type=text] {
+    height: 150px;
+    overflow: auto;
+    
+} 
+
+input[type=submit] {
+    width: 100%;
+    background-color: #092c58;
+    font-family: 'Julius Sans One';
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #0f3667;
+}
+
+/* ------ Rules to allow color change of placeholder text ------- */
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+
+/*----------- end rules ------------ */
+
+
+
+/*========= TABLET --- TABLET ---- TABLET ============*/
+/*========= TABLET --- TABLET ---- TABLET ============*/
+/*========= TABLET --- TABLET ---- TABLET ============*/
+
+
+
+
+
+@media screen and (min-width:768px) {
+    
+#home-background {
+	background: url('http://s2.postimg.org/wxv4wi8yx/P7260240.jpg')no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto; /* in Mobile this was 100%*/
+    overflow: scroll; /* in Mobile this was hidden before*/
+}
+
+main {
+  width: 98%;
+}
+
+
+/*#modal-popup 
+    color: #fff;
+    font-size:65px;
+    font-style:bolder;
+    text-align: center;
+    padding-top:90px;
+	height:200px;
+    width:450px;
+    background-color:#000;
+    position:fixed;
+    z-index: 900;
+    margin-left:75px;
+} */
+
+/*just guessed and checked, but needed to specify just UL to style in the center. Won't work if specifying both ul and li*/
+    
+    
+/* ============= NAVIGATION - TABLET ====================*/
+    
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #092c58;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.3em;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+    color: #fff;
+    background-color: #ffc414;
+    }
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+    
+/* home page */
+
+.name {
+    width:100%;
+}
+    
+.name h1 {
+	
+	font-family:'Caveat';
+    color:#f5f5f5;
+    font-size: 5em;
+    letter-spacing: .10em;
+    margin-top:12%;
+    text-align: center;
+    /*padding: 0 2% 0 2%;*/
+}
+
+
+.banner h3 {
+	font-family:'Julius Sans One';
+    text-align:center;
+    color: #fff;
+	font-size:2em;
+    color: #9cc8f8;
+}
+
+.button {
+    background-color: #4d9cee;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 45% 0 0 25%;
+    cursor: pointer;
+}
+
+/* ============== FOOTER  - TABLET ===============*/
+
+.footer {
+    background:#f0f0f0;
+    padding: 1% 0 0 0;
+}
+
+.social {
+    width:100%;
+    position: /*fixed*/;
+    bottom:0;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+
+.social i {
+    padding: 2% 2% 2% 2%;
+    color: #092c58;
+}
+
+.social a {
+font-size: 1.2em; /* size of social icons*/
+}
+    
+.social a:hover {
+    color:#fff;
+    background: #3f8fe6;
+}
+
+.footer-nav {
+    padding: 0 0 2% 0;  
+}
+
+.footer-nav ul {
+    list-style:none;
+    font-family: 'Open Sans';
+}
+
+.footer-nav ul li{
+    text-align: center;
+    margin: 0 5% 0 0;   
+    padding: 0 0 1% 0;
+
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color:#6887f0;
+}
+
+.footer-nav ul li a:hover {
+    padding: 0 0 1px 0;
+    border-bottom:  1px #333 solid;
+}
+
+.footer-copyright {
+    text-align: center;
+    background:#f0f0f0;
+}
+
+.footer-copyright i {
+    font-size: .8em;
+    color:#cbcaca;  
+    padding: 0 5% 0 0;    
+}
+
+.year {
+    color:#cbcaca; 
+    display:inline-block;
+    margin:0 0 0 -4%;
+    font-size: .8em;
+    font-family: 'Open Sans';
+}
+
+.copyright {
+    display:inline-block;
+}
+
+.copyright p { 
+    font-family: 'Open Sans';
+    font-size: .8em;
+    color:#cbcaca;    
+}
+
+/* ============= CTA BUTTON  - TABLET  =================*/
+    
+/* ============== REGULAR CTA BUTTON on white  - TABLET  ===========*/
+.cta {
+    width:70%;
+    margin:0;
+}
+
+.cta a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5% 8% 5% 8%;
+    background: #092c58;
+    font-size: 1em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px solid #092c58;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.cta a:hover {
+    background: #3f8fe6;
+    color:#fff;
+    border: 2px solid #3f8fe6;
+;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+    
+/*------------- background for ALL OTHER PAGES  - TABLET ----------------------*/
+
+.about {
+    background-color: #fff;
+}
+/* ------------------ HOME PAGE  - TABLET ------------------------- */
+    .home-container{
+}
+
+.name {
+}
+
+.name h1 {
+    margin: 8% 0 0 0;
+    font-family: 'Caveat';
+    font-size: 4.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.job-title p{
+    font-family: 'Open Sans';
+    color:#fff;
+    font-size:2em;
+    width: 100%;
+    margin:0;
+    text-align: center;
+}
+
+.home-cta {
+    width:70%;
+    margin: 60% 15% 0 15%;
+}
+
+.home-cta a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5% 8% 5% 8%;
+    background: none;
+    opacity:;
+    font-size: 1.2em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px #fff solid; 
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+
+}
+
+.home-cta a:hover {
+    background: #092c58;
+    color:#fff;
+    border: 2px #092c58 solid; 
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+
+.line {
+    border-color:#999;
+    width:90%;
+    margin:0 5% 2% 5%
+}       
+    
+.skills-preview {
+    margin: 30% 0 0 0;
+    padding: 0 0 8% 0;
+    width:100%;
+    background: #fff;
+}
+
+.section-title {
+    
+}
+
+.section-title h1 {
+    margin: 0 0 0 0;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    padding: 5% 0 3% 0;
+}
+
+.skill {
+    width:32%;
+    padding: 0 0 5% 0;
+    display:inline-block;
+}
+
+.skill h1 /* just using this to do text-align for the icon i*/ {
+
+    text-align: center;
+    
+}
+
+.skill i {
+    font-size: 3em;
+    color: #3f8fe6;
+}
+
+.skill h2 {
+    font-family: 'Open Sans';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.skill p {
+    font-family: 'Open Sans';
+    text-align: center;
+    margin: 0 5% 0 5%;
+    padding: 0 0 0 0;
+
+}
+
+.home-bottom {
+    width:100%;
+    background: #3f8fe6;   
+    margin: 0;
+    padding: 0 0 12% 0;
+}
+
+.home-bottom h2 {
+    margin:0 10% 0 10%;
+    padding:5% 0 5% 0 ;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color:#fff;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+    font-size: 1.3em;
+    width:80%;
+}
+
+.cta-bottom {
+    width:70%;
+    margin: 5% 15% 0 15%;
+}
+
+.cta-bottom a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5% 8% 5% 8%;
+    background: #fff;
+    font-size: 1.2em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#3f8fe6;
+    text-transform:uppercase;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.cta-bottom a:hover {
+    background: #092c58;
+    color:#fff;
+    opacity: 80%;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+    
+/* ======================= ABOUT PAGE - TABLET  ============================*/ 
+
+.intro {
+   padding: 0 0 8% 0; 
+}
+
+/*.section-header h1 {
+    font-family:'Caveat';
+    font-size: 4em;
+    color: #000;
+    text-align:center;
+    margin: 5% 0 0 0;
+    padding:0;
+    text-transform: none;
+} 
+
+.section-header h3 {
+    font-family:'Julius Sans One';
+    font-size: 1em;
+    margin: 0 0 5% 0;
+    padding:0; 
+    text-align:center;
+}*/
+
+.intro-img {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/intro-img.jpg'); /*open to changing photo*/
+    background-size:cover;
+    background-position:center;
+    background-repeat: none;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    margin:auto; /*keeps it centered*/
+    border: 0px solid #4d9cee;
+    
+}
+  
+.sf {
+        
+    }
+    
+.sf h2 {
+    font-family:'Caveat';
+    color: #092c58;
+    font-size: 2.8em;
+    text-align:center;
+    margin:auto;
+    padding: 3% 0 0 0;
+}
+
+.sf h1 {
+    font-family:'Caveat';
+    color: #092c58;
+    font-size: 3.5em;
+    text-align:center;
+    margin: 0 0 0 0;
+    padding: 0 0 5% 0;
+}
+
+.about-cta {
+    padding: 0 0 8% 0;
+    margin: 10% 0 0 0;
+}
+
+.about-body {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    padding: 0 0 0 0;
+}
+
+.about-me{
+
+}
+
+.about-me p { 
+    font-family:'Open Sans';
+    padding: 0;
+    background-color: #fff;
+    margin:0 0 3% 0;
+    line-height: 1.8em;
+    font-size: 1.1em;
+    width:100%;
+}
+
+.resume {
+    width:50%;
+    padding: 5% 0 5% 0;
+    margin: 0 25% 0 25%;
+}
+.resume-icon {
+    display: inline-block;
+    margin: 0 0 0 25%;
+}
+
+.resume-icon i {
+    font-size: 3em;
+
+}
+
+.resume-icon a {
+    background: none;
+    color:#3f8fe6;
+
+}
+
+/*.resume-icon a:hover {
+    background: none;
+    color:#092c58;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+  /*  -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}*/
+
+
+.resume-cta {
+    width:20%;
+    display: inline-block;
+    align-content:left;
+}
+.resume-cta a {
+    width:;
+    text-align: left;
+    text-decoration: none;
+    padding: 7% 8% 2% 8%;
+    background: none;
+    font-size: 1em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#3f8fe6;
+    text-transform:uppercase;
+    /*border: 2px #333 solid; */
+    /*box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+}
+
+.about-design {
+
+    }
+    
+.about-design p {
+    font-family:'Open Sans';
+    padding: 0;
+    background-color: #fff;
+    margin:0 0 3% 0;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+.about-design h3 {
+    margin:0;
+    padding: 0 0 2% 0;
+}
+
+
+
+/*.resume-cta a:hover {
+    background: none;
+    color:#092c58;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+  /*  -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}*/
+
+
+.about-background p {
+    font-family:'Open Sans';
+    padding: 0 2% 8% 2%;
+    background-color: #fff;
+    margin:0 0 3% 0;   
+}
+
+.bottom {
+    width:100%;  
+    margin: 0;
+    background:none; 
+    padding: 0 0 8% 0;
+}
+
+.bottom h2 {
+    margin:0 5% 0 5%;
+    padding:8% 0 5% 0 ;
+    font-family: 'Open Sans';
+    color:#000;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+
+/*---------- Portfolio Page  - TABLET ----------------*/
+
+.portfolio {
+    width: 100%;
+    margin: 0;
+}
+
+.portfolio h1 {
+    font-family: 'Caveat';
+    font-size: 6em;
+    margin: 10% 0 0 0;
+    text-align: center;
+    
+}
+
+.portfolio h3 {
+    font-family:'Julius Sans One';
+    font-size: 1.2em;
+    margin: 0 0 8% 0;
+    text-align: center;
+}
+
+.section-title h3 { 
+    width:100%;
+    font-family: 'Julius Sans One';
+    color: #000;
+    background:#fff;
+    font-size: 1.2em;
+}
+
+.portfolio-feed {
+    width:100%;
+    margin:0 0 0 1%;
+}
+
+.project-preview {
+    width:22%;
+    display: inline-block;
+    margin: 0 1% 0 1%;
+}
+
+.project-preview img {
+    width: 100%;
+ }
+
+.project-preview h2 {
+    font-family: 'Merriweather';
+    color: #092c58;
+    margin: 3% 0 3% 0; 
+    font-size: 1.1em;
+}
+    
+.project-preview h4 {
+    font-family: 'Julius Sans One';
+    font-size: .5em;
+    width:100%;
+    
+ }
+.project-preview h4 {
+    font-family: 'Julius Sans One';
+    font-size: .5em;
+    width:100%;
+    
+ }
+
+.project-preview a {
+    text-decoration: none;
+    color: #4d9cee;
+    
+} 
+
+
+/* ---------- project details page - TABLET ---------------*/
+
+
+.project-detail {
+    width:90%;
+    margin: 0 5% 0 5%;
+}
+
+.project-img img {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 3% 0 0 0;
+ }
+
+.project-detail-top h1 {
+    font-family: 'Merriweather';
+    color: #092c58;
+    margin: 5% 0 5% 0; 
+    font-size: 1.5em;
+}
+
+.project-detail-top h4 {
+    font-family: 'Julius Sans One';
+    font-size: 1em;
+    color:#4d9cee;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.case-study {
+    padding: 5% 0 2% 0;
+}
+
+
+.case-study h2 {
+    font-family: 'Julius Sans One';
+    padding: 0;
+    margin: 0;
+    color:#092c58;
+     
+ }
+
+.case-study p {
+    font-family:'Open Sans';
+    background-color: #fff;
+    font-size:1em;
+    line-height: 1.7em;
+    padding: 0 0 2% 0;
+}
+
+.case-study ul {
+    margin: 2% 0 5% 0;
+    
+    }
+.case-study ul li {
+    font-family:'Open Sans';
+    background-color: #fff;
+    font-size:1em;
+    line-height: 1.7em;
+}   
+
+.case-study img {
+    padding: 5% 0 3% 0;
+}
+
+.project-button {
+    margin: 10% 0 0 0;
+}
+
+.project-button a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5% 8% 5% 8%;
+    background: #092c58;
+    font-size: 1em;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px solid #092c58;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.project-button a:hover {
+    background: #3f8fe6;
+    color:#fff;
+    border: 2px solid #3f8fe6;
+}
+
+    
+.back-services {
+    width:90%;
+    margin: 0 5% 5% 5%; 
+}
+
+.back-services a {
+    font-family: 'Open Sans';
+    color:#3f8fe6;
+    text-decoration: none;
+    padding: 0 0 1% 0;
+    text-transform: uppercase;
+}
+
+.back-services a:hover {
+    color:#3f8fe6;
+    text-decoration: uppercase;
+    border-bottom: 1px #092c58 solid;
+}
+
+    
+/* -------------------- Contact Page - TABLET ---------------- */
+
+.contact-title {
+    display:none;
+}
+
+.contact h1 {
+    font-family: 'Caveat';
+    font-size: 4em;
+    margin: 0 0 0 0;
+    text-align: center;
+    padding: 3% 0 0 0;
+    
+}
+
+.contact h3 {
+    font-family:'Julius Sans One';
+    font-size: .8em;
+    margin: 0 0 5% 0;
+    text-align: center;
+}
+
+.details-container {
+    width: 90%;
+    margin:0 5% 0 5%;
+    padding: 0 0 8% 0;
+}
+
+    
+.contact-details {
+    width:100%;
+    margin:auto;
+    padding: 0 0 0 0;
+    }
+    
+.contact-details p {
+    padding: 0 0 1% 0;    
+    }
+
+.contact-line {
+    border-color: #092c58;
+    margin: 0 5% 15px 5%;
+    width: 90%;
+}
+
+.contact-details img {
+    padding: 3% 0 3% 0;
+}
+
+.contact-details h2 {
+    font-family: 'Merriweather';
+    font-size: 1.2em;
+    width: 100%;
+    }
+
+.contact-details p {
+    font-family: 'Open Sans';
+    width: 100%;
+
+}
+
+.detail-button a {
+    width: 100%;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+    color: #fff;
+    background-color: #092c58;
+    padding: 3%;
+    margin: 3% 0 0 0 ;
+    border-radius: 1px;
+}
+   
+    
+.contact-form {
+    width:60%;
+    margin: 0 20% 0 20%;
+    padding: 3% 0 3% 0;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #4d9cee;
+    font-family: 'Julius Sans One';
+    color: #fff;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+#message input[type=text] {
+    height: 150px;
+    overflow: auto;
+    
+} 
+
+input[type=submit] {
+    width: 100%;
+    background-color: #092c58;
+    font-family: 'Julius Sans One';
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #0f3667;
+}
+
+/* ------ Rules to allow color change of placeholder text ------- */
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+
+    
+} /* end Tablet Media Query */
+
+
+/*========= DESKTOP --- DESKTOP ---- DESKTOP ============*/
+/*========= DESKTOP --- DESKTOP ---- DESKTOP ============*/
+/*========= DESKTOP --- DESKTOP ---- DESKTOP ============*/
+
+
+@media screen and (min-width:940px) {
+    
+#home-background {
+	background: url('http://s2.postimg.org/wxv4wi8yx/P7260240.jpg')no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+main {
+  width: 100%;
+}
+
+
+/*#modal-popup 
+    color: #fff;
+    font-size:65px;
+    font-style:bolder;
+    text-align: center;
+    padding-top:90px;
+	height:200px;
+    width:450px;
+    background-color:#000;
+    position:fixed;
+    z-index: 900;
+    margin-left:75px;
+} */
+
+/*just guessed and checked, but needed to specify just UL to style in the center. Won't work if specifying both ul and li*/
+
+/* home page */
+
+.name {
+    width:100%;
+}
+    
+.name h1 {
+	
+	font-family:'Caveat';
+    color:#f5f5f5;
+    font-size: 5.2em;
+    letter-spacing: .10em;
+    margin-top:0;
+    text-align: center;
+    /*padding: 0 2% 0 2%;*/
+}
+
+
+.banner h3 {
+	font-family:'Julius Sans One';
+    text-align:center;
+    color: #fff;
+	font-size:1.6em;
+    color: #9cc8f8;
+}
+
+.button {
+    background-color: #4d9cee;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 45% 0 0 25%;
+    cursor: pointer;
+}
+    
+
+/* ----------- Remove mobile/tablet nav styles --------------------*/
+
+.bars i {
+        display:none;
+}
+    
+.home-bars i {
+        display:none;
+}
+
+/*----- home desktop navigation --------*/
+    
+.home-nav {
+    display:block; /* display none for mobile and tablet */
+    margin: 30% 0 0 0; 
+    background:#333;
+    opacity: .7;
+    width:100%;
+    }
+    
+.home-nav ul { /* need to center without margins */
+    margin: 0 0 0 28%;
+    }
+
+.home-nav ul li {
+    display: inline-block;
+    padding: 2% 2% 2% 2%;
+
+}    
+    
+.home-nav a { 
+    font-family: 'Julius Sans One';
+    color: #fff;
+    font-size: 1.8em;
+    text-decoration: none;
+    background:#333;
+    margin:0 0 0 0;
+}
+    
+.home-nav a:active {
+    color: #092c58;
+}
+/*------------- desktop nav for all other pages ----------------------*/
+.desktop-nav {
+    display:block; /* display none for mobile and tablet */
+    background:#fff;
+    width:100%;
+    }
+    
+.desktop-nav ul { /* need to center without margins */
+    margin:0;
+    }
+
+.desktop-nav ul li {
+    display: inline-block;
+    padding: 2% 2% 2% 2%;
+}    
+    
+.desktop-nav a { 
+    font-family: 'Julius Sans One';
+    color: #4d9cee;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin:0 0 0 0;
+}
+
+/* ---- other styles for all pages ------- */
+
+.section-title h3 { 
+    width:100%;
+    font-family: 'Julius Sans One';
+    color: #000;
+    background:#fff;
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 2%;
+}
+/* ----------- About Page ------------- */
+
+
+/* PROBLEM bc background is not long enough for scroll 
+
+.background {
+	background: url('https://s11.postimg.org/sn26ci05v/light_bg.jpg')no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+} */
+
+.background {
+    background: #fff;
+    width:100%;
+    margin: 0;
+}
+    
+.intro {
+    background:#ccc;
+    width: 40%;
+    float:right;
+    margin: 0 6% 0 0;
+}
+
+.intro h1 {
+    font-family:'Caveat';
+    font-size: 6em;
+    color: #000;
+    padding:0;
+    margin:auto;
+    width:100%;
+} 
+
+.intro h3 {
+    font-family:'Julius Sans One';
+    font-size: 1.2em;
+    margin:0 0 5% 0;
+    width:100%;
+}
+
+.intro-img {
+    width: 250px;
+    height: 250px;
+    background-image: url('../img/intro-img.jpg'); /*open to changing photo*/
+    background-size:cover;
+    background-position:center;
+    background-repeat: none;
+    border-radius: 125px; /*half of your width and height*/
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    margin:auto; /*keeps it centered*/
+    border: 3px solid #4d9cee;   
+}
+    
+.intro h2{
+    font-family:'Caveat';
+    font-size: 2.5em;
+    color: #4d9cee;
+    text-align:center;
+    margin:auto;
+    padding: 3% 0 7% 0;
+}
+
+.intro-text {
+    background:#ccc;
+    border-radius: 300px ;
+    width: 40%; 
+    margin: 0 0 0 6%;
+    clear:left;
+    padding: 12% 0 16% 0; 
+ 
+}
+
+
+.intro-text h2 {
+    font-family: 'Merriweather';
+    font-size: 1.6em;
+    line-height: 1.8em;
+    width: 80%;
+    margin: 0 10% 0% 10%;
+}
+
+
+.about-section {
+    overflow:hidden; /*for some reason it would not contain divs without these two properties*/
+    height:100%; /*for some reason it would not contain divs without these two properties*/
+    width: 100%
+}
+
+.about-body {
+    overflow:hidden; /*for some reason it would not contain divs without these two properties*/
+    height:100%; /*for some reason it would not contain divs without these two properties*/
+    margin: auto;
+    width: 80%; /* if top boxes have 4% margins on either side*/
+}
+
+
+.about-me p { 
+    font-family:'Open Sans';
+    font-size: 1.1em;
+    padding: 0;
+    width:100%;
+    background-color: #ddd;
+    margin:0 0 3% 0;
+}
+
+.hobbies {
+    border-bottom: 1px solid #666;
+    padding: 0 0 2% 0;
+}
+
+.hobbies table {
+    width:100%;
+}
+    
+.hobbies td {
+    width:40%;
+}
+
+.hobbies i {
+    font-size: 1.6em;
+    padding: 0 4% 0 2%;
+    line-height: 1.4em;
+}
+
+.hobbies p{
+    font-family: 'Open Sans';
+    width:100%;
+}
+
+
+.about-design p {
+    font-family:'Open Sans';
+    font-size: 1.1em;
+    padding: 0 2% 0 2%;
+    width:100%;
+    background-color: #fff;
+    margin:0 0 3% 0;   
+}
+
+.skills {
+    border-bottom: 1px solid #666; 
+    padding: 0 0 5% 0;
+}
+
+.skills table {
+    width:100%;
+}
+    
+.skills td {
+    width:40%;
+    line-height: 1em;  
+}
+
+.skills i {
+    font-size: 1.6em;
+    padding: 0 4% 0 2%;
+    line-height: 1.4em;
+}
+
+.skills p{
+    font-family: 'Open Sans';
+    width:100%;
+}
+
+
+.resume {
+    padding: 0;
+}
+
+.resume-dl {
+    padding: 0 0 5% 0;
+}
+
+.resume-dl i {
+    font-size: 2.8em;
+    padding: 0 5% 0 2%; 
+    color: #4d9cee;
+}
+
+.resume-dl p {
+    font-family: 'Open Sans'; 
+    display: inline-block;
+    font-size: 1em;
+    color: #4d9cee;
+    text-transform: uppercase;
+
+}
+  
+.resume-body {
+    border: 2px solid #000;
+    width: 60%;
+    margin: 0 20% 0 20%; 
+    border: 3px solid #000;
+    overflow:hidden; /*for some reason it would not contain divs without these two properties*/
+    height:100%; /*for some reason it would not contain divs without these two properties*/
+    display: block;
+    box-shadow: 7px 7px 3px #888888;
+}
+
+.resume-body h3 {
+    text-align: center;
+    font-family: 'Caveat';
+    color: #fff;
+    font-size: 3.5em;
+    margin: 0;
+    padding: 3% 0 0 0;
+    background: #4d9cee;
+}
+.resume-body h4{
+    text-align: center;
+    font-family: 'Julius Sans One';
+    color: #fff;
+    font-size: 1em;
+    margin: 0;
+    padding: 2% 0 3% 0;
+    background: #4d9cee; 
+}
+.resume-body p {
+    font-family:'Open Sans';
+    font-size: 1em;
+    color: #000;
+    padding: 0 2% 0 2%;
+    background-color: #fff;
+    margin: 5% 0 5% 5%;   
+}
+
+/* -------------------- Contact Page ---------------- */
+.contact {
+        display:none;
+    }
+    
+.contact-title {
+    background:#ccc;
+    width: 90%;
+    float:right;
+    margin: 0 6% 0 0; 
+    padding: 0 0 5% 0;
+    display:block;
+    text-align: center;
+    }
+    
+    
+.contact-title h1 {
+    font-family:'Caveat';
+    font-size: 6em;
+    color: #000;
+    padding:0;
+    margin:auto;
+    width:100%;
+} 
+
+.contact-title h3 {
+    font-family:'Julius Sans One';
+    font-size: 1.2em;
+    margin:0 0 5% 0;
+    width:100%;
+}
+        
+.details-container {
+    background:#ccc;
+    width: 40%; 
+    margin: 0% 0 0 6%;
+    float:left;
+    padding: 1% 0 3% 0; 
+}  
+    
+.contact-details {
+    width:80%;
+    margin:auto;
+    }
+
+.contact-details h2 {
+    font-family: 'Merriweather';
+    width: 100%;
+
+    }
+
+.contact-details p {
+    font-family: 'Open Sans';
+    width: 100%;
+
+}
+    
+.detail-button a {
+    width: 100%;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+    color: #fff;
+    background-color: #092c58;
+    padding: 3%;
+    margin: auto;
+    border-radius: 1px;
+}
+   
+.form-container {
+    background:#ccc;
+    width: 40%; 
+    margin: 0% 6% 0 0;
+    float:right;
+    padding: 1% 0 3% 0;         
+    }
+    
+
+input[type=text], select {
+    width: 100%;
+    padding: .8em 1em;
+    background-color: #4d9cee;
+    font-family: 'Julius Sans One';
+    font-size: 1em;
+    color: #fff;
+    margin: .5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+#message input[type=text] {
+    height: 12em;
+    overflow: auto;
+} 
+
+input[type=submit] {
+    width: 100%;
+    background-color: #092c58;
+    font-family: 'Julius Sans One';
+    color: white;
+    padding: 3%;
+    margin: 0;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type=submit]:hover {
+    background-color: #0f3667;
+}
+
+.contact-form {
+    width:80%;
+}
+
+/* ------ Rules to allow color change of placeholder text ------- */
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+
+/*----------- end rules ------------ */
+
+.social {
+    width:100%;
+    margin:3% 0 3% 0;  
+    display: inline-block;
+}
+
+.social i {
+    font-size: 2.5em;
+    padding: 2% 2% 2% 2%;
+    color: #092c58;
+}
+    
+/*---------- Portfolio Page ----------------*/
+
+.portfolio {
+    width: 100%;
+    overflow: hidden;
+    margin: 5% 2% 0% 2%;
+}
+
+.portfolio h1 {
+    font-family: 'Caveat';
+    font-size: 6em;
+    margin: 10% 0 0 0;
+    text-align: center;
+    
+}
+
+.portfolio h3 {
+    font-family:'Julius Sans One';
+    font-size: 1.2em;
+    margin: 0 0 8% 0;
+    text-align: center;
+}
+
+
+.portfolio-feed {
+    margin:0 0 0 2%;
+    width:98%;
+}
+
+
+.project-preview img {
+    width: 97%;
+ }
+
+.project-preview h4 {
+    font-family: 'Julius Sans One';
+    font-size: .7em;
+    padding: 0 0 5% 0;
+    
+ }
+
+.project-preview a {
+    text-decoration: none;
+    color: #4d9cee;
+} 
+
+.case-study {
+    padding: 5% 0 15% 0;
+}
+
+
+.case-study h2 {
+    font-family: 'Julius Sans One';
+    padding: 0;
+    margin: 0;
+    color:#092c58;
+     
+ }
+
+.case-study p {
+    font-family:'Open Sans';
+    background-color: #fff;
+    font-size:1em;
+    line-height: 1.7em;
+}
+
+.case-study ul li {
+    font-family:'Open Sans';
+    background-color: #fff;
+    font-size:1em;
+    line-height: 1.7em;
+}   
+
+.case-study img {
+    padding: 0 0 5% 0;
+}
+
+.project-button a {
+    width: 80%;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+    color: #fff;
+    background-color: #092c58;
+    padding: 3%;
+    margin: 3% 0 15% 0;
+    border-radius: 1px;
+    
+}
+
+    
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
