@@ -236,7 +236,7 @@ ul.topnav li a:hover {
 
 .footer-copyright {
     text-align: center;
-    background:#f0f0f0;
+    background:none;
 }
 
 .footer-copyright i {
@@ -723,6 +723,7 @@ ul.topnav li a:hover {
     font-size: 1.2em;
     padding: 2% 0 5% 0;
     margin: 0 0 10% 0;
+    color:#333;
  }
 
 .project-preview a {
@@ -749,13 +750,14 @@ ul.topnav li a:hover {
     font-family: 'Merriweather';
     color: #092c58;
     margin: 5% 0 5% 0; 
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .project-detail-top h4 {
-    font-family: 'Julius Sans One';
+    font-family: 'Open Sans';
+    text-transform: uppercase;
     font-size: 1em;
-    color:#4d9cee;
+    color:#3f8fe6;
     padding: 0 0 5% 0;
     margin: 0 0 5% 0;
 }
@@ -770,7 +772,7 @@ ul.topnav li a:hover {
     font-size: 1.2em;
     padding: 0;
     margin: 0;
-    color:#092c58;
+    color:#333;
      
  }
 
@@ -1165,7 +1167,7 @@ font-size: 1.2em; /* size of social icons*/
 
 .footer-copyright {
     text-align: center;
-    background:#f0f0f0;
+    background:none;
 }
 
 .footer-copyright i {
@@ -1638,7 +1640,7 @@ font-size: 1.2em; /* size of social icons*/
 }
 
 .project-preview {
-    width:22%;
+    width:30%;
     display: inline-block;
     margin: 0 1% 0 1%;
 }
@@ -1654,16 +1656,12 @@ font-size: 1.2em; /* size of social icons*/
     font-size: 1.1em;
 }
     
+
 .project-preview h4 {
     font-family: 'Julius Sans One';
-    font-size: .5em;
+    font-size: 1em;
     width:100%;
-    
- }
-.project-preview h4 {
-    font-family: 'Julius Sans One';
-    font-size: .5em;
-    width:100%;
+    color:#333;
     
  }
 
@@ -1688,17 +1686,22 @@ font-size: 1.2em; /* size of social icons*/
     padding: 3% 0 0 0;
  }
 
+.project-detail-top {
+    padding: 0 0 4% 0;
+}
+    
 .project-detail-top h1 {
     font-family: 'Merriweather';
     color: #092c58;
-    margin: 5% 0 5% 0; 
-    font-size: 1.5em;
+    margin: 2% 0 2% 0; 
+    font-size: 3em;
 }
 
 .project-detail-top h4 {
-    font-family: 'Julius Sans One';
-    font-size: 1em;
-    color:#4d9cee;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color:#3f8fe6;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
@@ -1712,7 +1715,7 @@ font-size: 1.2em; /* size of social icons*/
     font-family: 'Julius Sans One';
     padding: 0;
     margin: 0;
-    color:#092c58;
+    color:#333;
      
  }
 
@@ -1740,7 +1743,8 @@ font-size: 1.2em; /* size of social icons*/
 }
 
 .project-button {
-    margin: 10% 0 0 0;
+    margin: 15% 0 0 0;
+    padding: 0 0 10% 0;
 }
 
 .project-button a {
@@ -1749,9 +1753,8 @@ font-size: 1.2em; /* size of social icons*/
     text-decoration: none;
     padding: 5% 8% 5% 8%;
     background: #092c58;
-    font-size: 1em;
-    font-family: 'Open Sans';
-    font-weight: 700;
+    font-size: 1.2em;
+    font-family: 'Julius Sans One';
     color:#fff;
     text-transform:uppercase;
     border: 2px solid #092c58;
@@ -1795,7 +1798,7 @@ font-size: 1.2em; /* size of social icons*/
 
 .contact h1 {
     font-family: 'Caveat';
-    font-size: 4em;
+    font-size: 6em;
     margin: 0 0 0 0;
     text-align: center;
     padding: 3% 0 0 0;
@@ -1804,7 +1807,7 @@ font-size: 1.2em; /* size of social icons*/
 
 .contact h3 {
     font-family:'Julius Sans One';
-    font-size: .8em;
+    font-size: 1.2em;
     margin: 0 0 5% 0;
     text-align: center;
 }
@@ -1845,18 +1848,35 @@ font-size: 1.2em; /* size of social icons*/
 .contact-details p {
     font-family: 'Open Sans';
     width: 100%;
+    font-size: 1.1em;
 
 }
 
+.detail-button {
+    margin: 3% 0 3% 0;
+    padding: 0 0 0 0;
+}
+
 .detail-button a {
-    width: 100%;
-    font-family: 'Julius Sans One';
+    width:100%;
+    text-align: center;
     text-decoration: none;
-    color: #fff;
-    background-color: #092c58;
-    padding: 3%;
-    margin: 3% 0 0 0 ;
-    border-radius: 1px;
+    padding: 5% 8% 5% 8%;
+    background: #092c58;
+    font-size: 1.2em;
+    font-family: 'Julius Sans One';
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px solid #092c58;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.detail-button a:hover {
+    background: #3f8fe6;
+    color:#fff;
+    border: 2px solid #3f8fe6;
 }
    
     
@@ -1871,6 +1891,7 @@ input[type=text], select {
     padding: 12px 20px;
     background-color: #4d9cee;
     font-family: 'Julius Sans One';
+    font-size: 1.1em;
     color: #fff;
     margin: 8px 0;
     display: inline-block;
@@ -1889,6 +1910,7 @@ input[type=submit] {
     width: 100%;
     background-color: #092c58;
     font-family: 'Julius Sans One';
+    font-size: 1.3em;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -1935,12 +1957,12 @@ input[type=submit]:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: 100%;
-    overflow: hidden;
+    /* width: 100%; ---- horizontal scroll EW */
+    overflow: scroll; /* change to scroll for desktop */
 }
 
 main {
-  width: 100%;
+  width: auto;
 }
 
 
@@ -1962,6 +1984,42 @@ main {
 
 /* home page */
 
+/* ============= NAVIGATION - DESKTOP ====================*/
+    
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #092c58;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.3em;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+    color: #fff;
+    background-color: #ffc414;
+    }
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+    
+/* home page */
+
 .name {
     width:100%;
 }
@@ -1970,9 +2028,9 @@ main {
 	
 	font-family:'Caveat';
     color:#f5f5f5;
-    font-size: 5.2em;
+    font-size: 5em;
     letter-spacing: .10em;
-    margin-top:0;
+    margin-top:12%;
     text-align: center;
     /*padding: 0 2% 0 2%;*/
 }
@@ -1982,7 +2040,7 @@ main {
 	font-family:'Julius Sans One';
     text-align:center;
     color: #fff;
-	font-size:1.6em;
+	font-size:2em;
     color: #9cc8f8;
 }
 
@@ -1999,400 +2057,804 @@ main {
     margin: 45% 0 0 25%;
     cursor: pointer;
 }
-    
 
-/* ----------- Remove mobile/tablet nav styles --------------------*/
+/* ============== FOOTER  - DESKTOP ===============*/
 
-.bars i {
-        display:none;
-}
-    
-.home-bars i {
-        display:none;
+.footer {
+    background:#f0f0f0;
+    padding: 1% 0 0 0;
+    width:90%;
+    margin: 0 5% 0 5%; 
 }
 
-/*----- home desktop navigation --------*/
-    
-.home-nav {
-    display:block; /* display none for mobile and tablet */
-    margin: 30% 0 0 0; 
-    background:#333;
-    opacity: .7;
+.social {
     width:100%;
-    }
-    
-.home-nav ul { /* need to center without margins */
-    margin: 0 0 0 28%;
-    }
-
-.home-nav ul li {
-    display: inline-block;
-    padding: 2% 2% 2% 2%;
-
-}    
-    
-.home-nav a { 
-    font-family: 'Julius Sans One';
-    color: #fff;
-    font-size: 1.8em;
-    text-decoration: none;
-    background:#333;
-    margin:0 0 0 0;
+    position: /*fixed*/;
+    bottom:0;
+    margin: 0;
+    padding: 0 0 0 0;
 }
-    
-.home-nav a:active {
+
+
+.social i {
+    padding: 2% 2% 2% 2%;
     color: #092c58;
 }
-/*------------- desktop nav for all other pages ----------------------*/
-.desktop-nav {
-    display:block; /* display none for mobile and tablet */
-    background:#fff;
-    width:100%;
-    }
-    
-.desktop-nav ul { /* need to center without margins */
-    margin:0;
-    }
 
-.desktop-nav ul li {
-    display: inline-block;
-    padding: 2% 2% 2% 2%;
-}    
+.social a {
+font-size: 1.2em; /* size of social icons*/
+}
     
-.desktop-nav a { 
-    font-family: 'Julius Sans One';
-    color: #4d9cee;
-    font-size: 1.2em;
-    text-decoration: none;
-    margin:0 0 0 0;
+.social a:hover {
+    color:#fff;
+    background: #3f8fe6;
 }
 
-/* ---- other styles for all pages ------- */
+.footer-nav {
+    padding: 0 0 2% 0;  
+}
+
+.footer-nav ul {
+    list-style:none;
+    font-family: 'Open Sans';
+}
+
+.footer-nav ul li{
+    text-align: center;
+    margin: 0 5% 0 0;   
+    padding: 0 0 1% 0;
+
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color:#6887f0;
+}
+
+.footer-nav ul li a:hover {
+    padding: 0 0 1px 0;
+    border-bottom:  1px #333 solid;
+}
+
+.footer-copyright {
+    text-align: center;
+    background:none;
+}
+
+.footer-copyright i {
+    font-size: .8em;
+    color:#cbcaca;  
+    padding: 0 5% 0 0;    
+}
+
+.year {
+    color:#cbcaca; 
+    display:inline-block;
+    margin:0 0 0 -4%;
+    font-size: .8em;
+    font-family: 'Open Sans';
+}
+
+.copyright {
+    display:inline-block;
+}
+
+.copyright p { 
+    font-family: 'Open Sans';
+    font-size: .8em;
+    color:#cbcaca;    
+}
+
+/* ============= CTA BUTTON  - DESKTOP  =================*/
+    
+/* ============== REGULAR CTA BUTTON on white  - DESKTOP  ===========*/
+.cta {
+    width:70%;
+    margin:0;
+}
+
+.cta a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 3% 6% 3% 6%;
+    background: #092c58;
+    font-size: 1.2em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px solid #092c58;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.cta a:hover {
+    background: #3f8fe6;
+    color:#fff;
+    border: 2px solid #3f8fe6;
+;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+    
+/*------------- background for ALL OTHER PAGES  - DESKTOP ----------------------*/
+
+.about {
+    background-color: #fff;
+}
+/* ------------------ HOME PAGE  - DESKTOP ------------------------- */
+
+
+.name {
+}
+
+.name h1 {
+    margin: 0 0 0 0;
+    font-family: 'Caveat';
+    font-size: 4.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.job-title p{
+    font-family: 'Open Sans';
+    color:#fff;
+    font-size:2em;
+    width: 100%;
+    margin:0;
+    text-align: center;
+}
+
+.home-cta {
+    width:70%;
+    margin: 20% 15% 0 15%;
+}
+
+.home-cta a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 3% 6% 3% 6%;
+    background: none;
+    opacity:;
+    font-size: 1.2em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px #fff solid; 
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+
+}
+
+.home-cta a:hover {
+    background: #092c58;
+    color:#fff;
+    border: 2px #092c58 solid; 
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+
+.line {
+    border-color:#999;
+    width:90%;
+    margin:0 5% 2% 5%
+}       
+    
+.skills-preview {
+    margin: 30% 5% 0 5%;
+    padding: 0 0 8% 0;
+    width:90%;
+    background: #fff;
+}
+
+.section-title {
+    
+}
+
+.section-title h1 {
+    margin: 0 0 0 0;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    padding: 5% 0 3% 0;
+}
+
+.skill {
+    width:32%;
+    padding: 0 0 5% 0;
+    display:inline-block;
+}
+
+.skill h1 /* just using this to do text-align for the icon i*/ {
+
+    text-align: center;
+    
+}
+
+.skill i {
+    font-size: 3em;
+    color: #3f8fe6;
+}
+
+.skill h2 {
+    font-family: 'Open Sans';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.skill p {
+    font-family: 'Open Sans';
+    text-align: center;
+    margin: 0 5% 0 5%;
+    padding: 0 0 0 0;
+
+}
+
+.home-bottom {
+    width:90%;
+    background: #3f8fe6;   
+    margin: 0 5% 0 5%;
+    padding: 0 0 12% 0;
+}
+
+.home-bottom h2 {
+    margin:0 10% 0 10%;
+    width:80%;
+    padding:5% 0 5% 0 ;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color:#fff;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+    font-size: 1.3em;
+
+}
+
+.cta-bottom {
+    width:70%;
+    margin: 5% 15% 0 15%;
+}
+
+.cta-bottom a {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5% 8% 5% 8%;
+    background: #fff;
+    font-size: 1.2em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#3f8fe6;
+    text-transform:uppercase;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.cta-bottom a:hover {
+    background: #092c58;
+    color:#fff;
+    opacity: 80%;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+    
+/* ======================= ABOUT PAGE - DESKTOP  ============================*/ 
+
+.intro {
+   padding: 0 0 8% 0; 
+}
+
+/*.section-header h1 {
+    font-family:'Caveat';
+    font-size: 4em;
+    color: #000;
+    text-align:center;
+    margin: 5% 0 0 0;
+    padding:0;
+    text-transform: none;
+} 
+
+.section-header h3 {
+    font-family:'Julius Sans One';
+    font-size: 1em;
+    margin: 0 0 5% 0;
+    padding:0; 
+    text-align:center;
+}*/
+
+.intro-img {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/intro-img.jpg'); /*open to changing photo*/
+    background-size:cover;
+    background-position:center;
+    background-repeat: none;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    margin:auto; /*keeps it centered*/
+    border: 0px solid #4d9cee;
+    
+}
+  
+.sf {
+        
+    }
+    
+.sf h2 {
+    font-family:'Caveat';
+    color: #092c58;
+    font-size: 2.8em;
+    text-align:center;
+    margin:auto;
+    padding: 3% 0 0 0;
+}
+
+.sf h1 {
+    font-family:'Caveat';
+    color: #092c58;
+    font-size: 3.5em;
+    text-align:center;
+    margin: 0 0 0 0;
+    padding: 0 0 5% 0;
+}
+
+.about-cta {
+    padding: 0 0 8% 0;
+    margin: 10% 0 0 0;
+}
+
+.about-body {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    padding: 0 0 0 0;
+}
+
+.about-me{
+
+}
+
+.about-me p { 
+    font-family:'Open Sans';
+    padding: 0;
+    background-color: #fff;
+    margin:0 0 3% 0;
+    line-height: 1.8em;
+    font-size: 1.1em;
+    width:100%;
+}
+
+.resume {
+    width:50%;
+    padding: 5% 0 5% 0;
+    margin: 0 25% 0 25%;
+}
+.resume-icon {
+    display: inline-block;
+    margin: 0 0 0 25%;
+}
+
+.resume-icon i {
+    font-size: 3em;
+
+}
+
+.resume-icon a {
+    background: none;
+    color:#3f8fe6;
+
+}
+
+/*.resume-icon a:hover {
+    background: none;
+    color:#092c58;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+  /*  -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}*/
+
+
+/*.resume-cta {
+    width:20%;
+    display: inline-block;
+    align-content:left;
+}
+.resume-cta a {
+    width:;
+    text-align: left;
+    text-decoration: none;
+    padding: 5% 8% 5% 8%;
+    background: none;
+    font-size: 1.2em;
+    font-family: 'Julius Sans One';
+    font-weight: 700;
+    color:#3f8fe6;
+    text-transform:uppercase;
+    /*border: 2px #333 solid; */
+    /*box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+*/
+    
+.about-design {
+
+    }
+    
+.about-design p {
+    font-family:'Open Sans';
+    padding: 0;
+    background-color: #fff;
+    margin:0 0 3% 0;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+.about-design h3 {
+    margin:0;
+    padding: 0 0 2% 0;
+}
+
+
+
+/*.resume-cta a:hover {
+    background: none;
+    color:#092c58;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+  /*  -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}*/
+
+
+.about-background p {
+    font-family:'Open Sans';
+    padding: 0 2% 8% 2%;
+    background-color: #fff;
+    margin:0 0 3% 0;   
+}
+
+.bottom {
+    width:100%;  
+    margin: 0;
+    background:none; 
+    padding: 0 0 8% 0;
+}
+
+.bottom h2 {
+    margin:0 5% 0 5%;
+    padding:8% 0 5% 0 ;
+    font-family: 'Open Sans';
+    color:#000;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+
+/*---------- Portfolio Page  - DESKTOP ----------------*/
+
+.portfolio {
+    width: 100%;
+    margin: 0;
+}
+
+.portfolio h1 {
+    font-family: 'Caveat';
+    font-size: 6em;
+    margin: 0 0 0 0;
+    text-align: center;
+    
+}
+
+.portfolio h3 {
+    font-family:'Julius Sans One';
+    font-size: 1.2em;
+    margin: 0 0 8% 0;
+    text-align: center;
+}
 
 .section-title h3 { 
     width:100%;
     font-family: 'Julius Sans One';
     color: #000;
     background:#fff;
-    font-size: 1.5em;
-    text-align: left;
-    margin-left: 2%;
+    font-size: 1.2em;
 }
-/* ----------- About Page ------------- */
 
-
-/* PROBLEM bc background is not long enough for scroll 
-
-.background {
-	background: url('https://s11.postimg.org/sn26ci05v/light_bg.jpg')no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
-} */
-
-.background {
-    background: #fff;
+.portfolio-feed {
     width:100%;
-    margin: 0;
+    margin:0 0 0 1%;
+}
+
+.project-preview {
+    width:22%;
+    display: inline-block;
+    margin: 0 1% 0 1%;
+}
+
+.project-preview img {
+    width: 100%;
+ }
+
+.project-preview h2 {
+    font-family: 'Merriweather';
+    color: #092c58;
+    margin: 3% 0 3% 0; 
+    font-size: 1.1em;
 }
     
-.intro {
-    background:#ccc;
-    width: 40%;
-    float:right;
-    margin: 0 6% 0 0;
-}
 
-.intro h1 {
-    font-family:'Caveat';
-    font-size: 6em;
-    color: #000;
-    padding:0;
-    margin:auto;
+.project-preview h4 {
+    font-family: 'Julius Sans One';
+    font-size: 1em;
     width:100%;
+    color:#333;
+    
+ }
+
+.project-preview a {
+    text-decoration: none;
+    color: #4d9cee;
+    
 } 
 
-.intro h3 {
-    font-family:'Julius Sans One';
-    font-size: 1.2em;
-    margin:0 0 5% 0;
-    width:100%;
+
+/* ---------- project details page - DESKTOP ---------------*/
+
+
+.project-detail {
+    width:90%;
+    margin: 0 5% 0 5%;
 }
 
-.intro-img {
-    width: 250px;
-    height: 250px;
-    background-image: url('../img/intro-img.jpg'); /*open to changing photo*/
-    background-size:cover;
-    background-position:center;
-    background-repeat: none;
-    border-radius: 125px; /*half of your width and height*/
-    -webkit-border-radius: 125px;
-    -moz-border-radius: 125px;
-    margin:auto; /*keeps it centered*/
-    border: 3px solid #4d9cee;   
+.project-img img {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 3% 0 0 0;
+ }
+
+.project-detail-top {
+    padding: 0 0 4% 0;
 }
     
-.intro h2{
-    font-family:'Caveat';
-    font-size: 2.5em;
-    color: #4d9cee;
-    text-align:center;
-    margin:auto;
-    padding: 3% 0 7% 0;
-}
-
-.intro-text {
-    background:#ccc;
-    border-radius: 300px ;
-    width: 40%; 
-    margin: 0 0 0 6%;
-    clear:left;
-    padding: 12% 0 16% 0; 
- 
-}
-
-
-.intro-text h2 {
+.project-detail-top h1 {
     font-family: 'Merriweather';
-    font-size: 1.6em;
-    line-height: 1.8em;
-    width: 80%;
-    margin: 0 10% 0% 10%;
+    color: #092c58;
+    margin: 2% 0 2% 0; 
+    font-size: 3em;
+}
+
+.project-detail-top h4 {
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color:#3f8fe6;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.case-study {
+    padding: 5% 0 2% 0;
 }
 
 
-.about-section {
-    overflow:hidden; /*for some reason it would not contain divs without these two properties*/
-    height:100%; /*for some reason it would not contain divs without these two properties*/
-    width: 100%
-}
-
-.about-body {
-    overflow:hidden; /*for some reason it would not contain divs without these two properties*/
-    height:100%; /*for some reason it would not contain divs without these two properties*/
-    margin: auto;
-    width: 80%; /* if top boxes have 4% margins on either side*/
-}
-
-
-.about-me p { 
-    font-family:'Open Sans';
-    font-size: 1.1em;
+.case-study h2 {
+    font-family: 'Julius Sans One';
     padding: 0;
-    width:100%;
-    background-color: #ddd;
-    margin:0 0 3% 0;
-}
+    margin: 0;
+    color:#333;
+     
+ }
 
-.hobbies {
-    border-bottom: 1px solid #666;
+.case-study p {
+    font-family:'Open Sans';
+    background-color: #fff;
+    font-size:1em;
+    line-height: 1.7em;
     padding: 0 0 2% 0;
 }
 
-.hobbies table {
-    width:100%;
-}
+.case-study ul {
+    margin: 2% 0 5% 0;
     
-.hobbies td {
-    width:40%;
-}
-
-.hobbies i {
-    font-size: 1.6em;
-    padding: 0 4% 0 2%;
-    line-height: 1.4em;
-}
-
-.hobbies p{
-    font-family: 'Open Sans';
-    width:100%;
-}
-
-
-.about-design p {
+    }
+.case-study ul li {
     font-family:'Open Sans';
-    font-size: 1.1em;
-    padding: 0 2% 0 2%;
-    width:100%;
     background-color: #fff;
-    margin:0 0 3% 0;   
+    font-size:1em;
+    line-height: 1.7em;
+}   
+
+.case-study img {
+    padding: 5% 0 3% 0;
 }
 
-.skills {
-    border-bottom: 1px solid #666; 
-    padding: 0 0 5% 0;
+.project-button {
+    margin: 15% 0 0 0;
+    padding: 0 0 10% 0;
 }
 
-.skills table {
+.project-button a {
     width:100%;
-}
-    
-.skills td {
-    width:40%;
-    line-height: 1em;  
-}
-
-.skills i {
-    font-size: 1.6em;
-    padding: 0 4% 0 2%;
-    line-height: 1.4em;
-}
-
-.skills p{
-    font-family: 'Open Sans';
-    width:100%;
-}
-
-
-.resume {
-    padding: 0;
-}
-
-.resume-dl {
-    padding: 0 0 5% 0;
-}
-
-.resume-dl i {
-    font-size: 2.8em;
-    padding: 0 5% 0 2%; 
-    color: #4d9cee;
-}
-
-.resume-dl p {
-    font-family: 'Open Sans'; 
-    display: inline-block;
-    font-size: 1em;
-    color: #4d9cee;
-    text-transform: uppercase;
-
-}
-  
-.resume-body {
-    border: 2px solid #000;
-    width: 60%;
-    margin: 0 20% 0 20%; 
-    border: 3px solid #000;
-    overflow:hidden; /*for some reason it would not contain divs without these two properties*/
-    height:100%; /*for some reason it would not contain divs without these two properties*/
-    display: block;
-    box-shadow: 7px 7px 3px #888888;
-}
-
-.resume-body h3 {
     text-align: center;
-    font-family: 'Caveat';
-    color: #fff;
-    font-size: 3.5em;
-    margin: 0;
-    padding: 3% 0 0 0;
-    background: #4d9cee;
-}
-.resume-body h4{
-    text-align: center;
+    text-decoration: none;
+    padding: 3% 6% 3% 6%;
+    background: #092c58;
+    font-size: 1.2em;
     font-family: 'Julius Sans One';
-    color: #fff;
-    font-size: 1em;
-    margin: 0;
-    padding: 2% 0 3% 0;
-    background: #4d9cee; 
-}
-.resume-body p {
-    font-family:'Open Sans';
-    font-size: 1em;
-    color: #000;
-    padding: 0 2% 0 2%;
-    background-color: #fff;
-    margin: 5% 0 5% 5%;   
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px solid #092c58;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-/* -------------------- Contact Page ---------------- */
-.contact {
-        display:none;
-    }
+
+.project-button a:hover {
+    background: #3f8fe6;
+    color:#fff;
+    border: 2px solid #3f8fe6;
+}
+
     
+.back-services {
+    width:90%;
+    margin: 0 5% 5% 5%; 
+}
+
+.back-services a {
+    font-family: 'Open Sans';
+    color:#3f8fe6;
+    text-decoration: none;
+    padding: 0 0 1% 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.back-services a:hover {
+    color:#3f8fe6;
+    text-decoration: uppercase;
+    border-bottom: 1px #092c58 solid;
+}
+
+    
+/* -------------------- Contact Page - DESKTOP ---------------- */
+
 .contact-title {
-    background:#ccc;
-    width: 90%;
-    float:right;
-    margin: 0 6% 0 0; 
-    padding: 0 0 5% 0;
-    display:block;
-    text-align: center;
-    }
-    
-    
-.contact-title h1 {
-    font-family:'Caveat';
-    font-size: 6em;
-    color: #000;
-    padding:0;
-    margin:auto;
-    width:100%;
-} 
+    display:none;
+}
 
-.contact-title h3 {
+.contact h1 {
+    font-family: 'Caveat';
+    font-size: 6em;
+    margin: 0 0 0 0;
+    text-align: center;
+    padding: 3% 0 0 0;
+    
+}
+
+.contact h3 {
     font-family:'Julius Sans One';
     font-size: 1.2em;
-    margin:0 0 5% 0;
-    width:100%;
+    margin: 0 0 5% 0;
+    text-align: center;
 }
-        
+
 .details-container {
-    background:#ccc;
-    width: 40%; 
-    margin: 0% 0 0 6%;
-    float:left;
-    padding: 1% 0 3% 0; 
-}  
+    width: 40%;
+    margin:0 0 0 5%;
+    padding: 0 0 8% 0;
+    display: inline-block;
+
+}
+
     
 .contact-details {
-    width:80%;
+    width:100%;
     margin:auto;
+    padding: 0 0 0 0;
     }
+    
+.contact-details p {
+    padding: 0 0 1% 0;    
+    }
+
+.contact-line {
+    border-color: #092c58;
+    margin: 0 5% 15px 5%;
+    width: 90%;
+}
+
+.contact-details img {
+    padding: 3% 0 3% 0;
+}
 
 .contact-details h2 {
     font-family: 'Merriweather';
+    font-size: 1.2em;
     width: 100%;
-
     }
 
 .contact-details p {
     font-family: 'Open Sans';
     width: 100%;
+    font-size: 1.1em;
 
 }
-    
+
+.detail-button {
+    margin: 3% 0 3% 0;
+    padding: 0 0 0 0;
+}
+
 .detail-button a {
-    width: 100%;
-    font-family: 'Julius Sans One';
+    width:100%;
+    text-align: center;
     text-decoration: none;
-    color: #fff;
-    background-color: #092c58;
-    padding: 3%;
-    margin: auto;
-    border-radius: 1px;
+    padding: 5% 8% 5% 8%;
+    background: #092c58;
+    font-size: 1.2em;
+    font-family: 'Julius Sans One';
+    color:#fff;
+    text-transform:uppercase;
+    border: 2px solid #092c58;
+    /*border: 2px #333 solid; */
+    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.detail-button a:hover {
+    background: #3f8fe6;
+    color:#fff;
+    border: 2px solid #3f8fe6;
 }
    
+   
 .form-container {
-    background:#ccc;
-    width: 40%; 
-    margin: 0% 6% 0 0;
+    width:40%;
+    display: inline-block;
     float:right;
-    padding: 1% 0 3% 0;         
-    }
-    
+    margin: 0 5% 0 0;
+}
+.contact-form {
+    width:100%;
+    margin: 0;
+    padding: 3% 0 3% 0;
+}
 
 input[type=text], select {
     width: 100%;
-    padding: .8em 1em;
+    padding: 12px 20px;
     background-color: #4d9cee;
     font-family: 'Julius Sans One';
-    font-size: 1em;
+    font-size: 1.1em;
     color: #fff;
-    margin: .5em 0;
+    margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 1px;
@@ -2400,29 +2862,26 @@ input[type=text], select {
 }
 
 #message input[type=text] {
-    height: 12em;
+    height: 300px;
     overflow: auto;
+    
 } 
 
 input[type=submit] {
     width: 100%;
     background-color: #092c58;
     font-family: 'Julius Sans One';
+    font-size: 1.3em;
     color: white;
-    padding: 3%;
-    margin: 0;
+    padding: 14px 20px;
+    margin: 8px 0;
     border: none;
     border-radius: 1px;
     cursor: pointer;
-    font-size: 1em;
 }
 
 input[type=submit]:hover {
     background-color: #0f3667;
-}
-
-.contact-form {
-    width:80%;
 }
 
 /* ------ Rules to allow color change of placeholder text ------- */
@@ -2442,109 +2901,7 @@ input[type=submit]:hover {
    color:    #fff;
 }
 
-/*----------- end rules ------------ */
-
-.social {
-    width:100%;
-    margin:3% 0 3% 0;  
-    display: inline-block;
-}
-
-.social i {
-    font-size: 2.5em;
-    padding: 2% 2% 2% 2%;
-    color: #092c58;
-}
     
-/*---------- Portfolio Page ----------------*/
-
-.portfolio {
-    width: 100%;
-    overflow: hidden;
-    margin: 5% 2% 0% 2%;
-}
-
-.portfolio h1 {
-    font-family: 'Caveat';
-    font-size: 6em;
-    margin: 10% 0 0 0;
-    text-align: center;
-    
-}
-
-.portfolio h3 {
-    font-family:'Julius Sans One';
-    font-size: 1.2em;
-    margin: 0 0 8% 0;
-    text-align: center;
-}
-
-
-.portfolio-feed {
-    margin:0 0 0 2%;
-    width:98%;
-}
-
-
-.project-preview img {
-    width: 97%;
- }
-
-.project-preview h4 {
-    font-family: 'Julius Sans One';
-    font-size: .7em;
-    padding: 0 0 5% 0;
-    
- }
-
-.project-preview a {
-    text-decoration: none;
-    color: #4d9cee;
-} 
-
-.case-study {
-    padding: 5% 0 15% 0;
-}
-
-
-.case-study h2 {
-    font-family: 'Julius Sans One';
-    padding: 0;
-    margin: 0;
-    color:#092c58;
-     
- }
-
-.case-study p {
-    font-family:'Open Sans';
-    background-color: #fff;
-    font-size:1em;
-    line-height: 1.7em;
-}
-
-.case-study ul li {
-    font-family:'Open Sans';
-    background-color: #fff;
-    font-size:1em;
-    line-height: 1.7em;
-}   
-
-.case-study img {
-    padding: 0 0 5% 0;
-}
-
-.project-button a {
-    width: 80%;
-    font-family: 'Julius Sans One';
-    text-decoration: none;
-    color: #fff;
-    background-color: #092c58;
-    padding: 3%;
-    margin: 3% 0 15% 0;
-    border-radius: 1px;
-    
-}
-
     
 }
 
