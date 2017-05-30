@@ -163,7 +163,7 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 1.2em;
     font-family: 'Open Sans';
     font-weight: 400;
 }
@@ -174,7 +174,8 @@ ul.topnav li a i {
 
 /* Change background color of links on hover */
 ul.topnav li a:hover {
-    color: #092c58;
+    color: #4d9cee;
+    text-decoration: underline;
     background-color: none;
 }
 
@@ -184,7 +185,7 @@ ul.topnav li a:hover {
 /* ============== FOOTER ===============*/
 
 .footer {
-    background:#f0f0f0;
+    background:#fff;
 }
 
 .social {
@@ -197,14 +198,12 @@ ul.topnav li a:hover {
 
 .social i {
     font-size: 2em;
-    padding: 2% 2% 2% 2%;
+    padding: 2% 3% 2% 3%;
     color: #092c58;
-}
 
-.social a:hover {
-    color:#fff;
+}.social i:hover{
+    color: #3f8fe6;
 }
-
 
 .footer-nav {
     padding: 3% 0 5% 0;  
@@ -336,17 +335,17 @@ ul.topnav li a:hover {
     margin: 60% 15% 0 15%;
 }
 
-.home-cta a { /* THIS ONE IS TRANSPARENT*/
+.home-cta a { 
     width:100%;
     text-align: center;
     text-decoration: none;
     padding: 7% 8% 7% 8%;
-    background: none;
+    background: #fff;
     opacity:;
     font-size: 1em;
     font-family: 'Julius Sans One';
     font-weight: 700;
-    color:#fff;
+    color:#092c58;
     text-transform:uppercase;
     border: 2px #fff solid; 
     box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -354,9 +353,9 @@ ul.topnav li a:hover {
 }
 
 .home-cta a:hover {
-    background: #092c58;
+    background: none;
     color:#fff;
-    border: 2px #092c58 solid; 
+    border: 2px # solid; 
 
     -webkit-transition: all 500ms ease; /* slows down hover effect*/
     -moz-transition: all 500ms ease;
@@ -434,7 +433,7 @@ ul.topnav li a:hover {
     font-weight: 400; /* normal */
     color:#fff;
     letter-spacing: 1.5px;
-    line-height: 1.5em;
+    line-height: 1.8em;
     font-size: 1.3em;
 }
 
@@ -495,7 +494,7 @@ ul.topnav li a:hover {
 .sf h2 {
     font-family:'Caveat';
     color: #000000;
-    font-size: 2.4em;
+    font-size: 2em;
     text-align:center;
     margin:auto;
     padding: 3% 0 0 0;
@@ -511,7 +510,7 @@ ul.topnav li a:hover {
 }
 
 .about-cta {
-    padding: 3% 0 8% 0;
+    padding: 4% 0 8% 0;
     margin: 12% 0 0 0;
 }
 
@@ -896,14 +895,35 @@ ul.topnav li a:hover {
     transition: all 500mdetail-button 
 
 }
-   
+ 
+.contact-question {
+    width: 94%;
+    margin: 0 3% 0 3%;
     
+}
+
+.contact-question h1 {
+    font-family: 'Caveat';
+}
+
+.contact-question p {
+    font-family: 'Open Sans';
+}
+
+.contact-question h2 {
+    font-family: 'Caveat';
+}
+
 .contact-form {
     width:96%;
     margin: 0 0 0 0;
     padding: 5% 0 3% 0;
 }
 
+.iframe-container {
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -1031,8 +1051,9 @@ ul.topnav li a {
 
 /* Change background color of links on hover */
 ul.topnav li a:hover {
-    color: #fff;
-    background-color: #ffc414;
+    color: #4d9cee;
+    text-decoration: underline;
+    background-color: none;
     }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
@@ -1081,7 +1102,7 @@ ul.topnav li.icon {display: none;}
 /* ============== FOOTER  - TABLET ===============*/
 
 .footer {
-    background:#f0f0f0;
+    background:#fff;
     padding: 1% 0 0 0;
 }
 
@@ -1092,20 +1113,21 @@ ul.topnav li.icon {display: none;}
     margin: 0;
     padding: 0 0 0 0;
 }
-
-
+    
 .social i {
+    font-size: 2em;
     padding: 2% 2% 2% 2%;
     color: #092c58;
+
+}.social i:hover{
+    color: #3f8fe6;
 }
+
 
 .social a {
 font-size: 1.2em; /* size of social icons*/
 }
-    
-.social a:hover {
-    color:#fff;
-}
+
 
 .footer-nav {
     padding: 0 0 2% 0;  
@@ -1174,7 +1196,7 @@ font-size: 1.2em; /* size of social icons*/
     width:100%;
     text-align: center;
     text-decoration: none;
-    padding: 5% 8% 5% 8%;
+    padding: 4% 8% 4% 8%;
     background: #092c58;
     font-size: 1em;
     font-family: 'Julius Sans One';
@@ -1239,13 +1261,13 @@ font-size: 1.2em; /* size of social icons*/
     width:100%;
     text-align: center;
     text-decoration: none;
-    padding: 5% 8% 5% 8%;
-    background: none;
+    padding: 4% 8% 4% 8%;
+    background: #fff;
     opacity:;
     font-size: 1.2em;
     font-family: 'Julius Sans One';
     font-weight: 700;
-    color:#fff;
+    color:;
     text-transform:uppercase;
     border: 2px #fff solid; 
     box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -1254,9 +1276,9 @@ font-size: 1.2em; /* size of social icons*/
 }
 
 .home-cta a:hover {
-    background: #092c58;
+    background: none;
     color:#fff;
-    border: 2px #092c58 solid; 
+    border: 2px #fff solid; 
 
     -webkit-transition: all 500ms ease; /* slows down hover effect*/
     -moz-transition: all 500ms ease;
@@ -1331,7 +1353,7 @@ font-size: 1.2em; /* size of social icons*/
     font-weight: 400;
     color:#fff;
     letter-spacing: 1.5px;
-    line-height: 1.5em;
+    line-height: 1.8em;
     font-size: 1.3em;
     width:80%;
 }
@@ -1372,7 +1394,7 @@ font-size: 1.2em; /* size of social icons*/
 /* ======================= ABOUT PAGE - TABLET  ============================*/ 
 
 .intro {
-   padding: 0 0 8% 0; 
+   padding: 0 0 3% 0; 
 }
 
 /*.section-header h1 {
@@ -1656,7 +1678,7 @@ font-size: 1.2em; /* size of social icons*/
     font-family: 'Merriweather';
     color: #092c58;
     margin: 2% 0 2% 0; 
-    font-size: 3em;
+    font-size: 2.6em;
 }
 
 .project-detail-top h4 {
@@ -1705,7 +1727,7 @@ font-size: 1.2em; /* size of social icons*/
 }
 
 .project-button {
-    margin: 15% 0 0 0;
+    margin: 12% 0 0 0;
     padding: 0 0 10% 0;
 }
 
@@ -1968,13 +1990,14 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 /* Change background color of links on hover */
 ul.topnav li a:hover {
-    color: #fff;
-    background-color: #092c58;
+    color: #3f8fe6;
+    text-decoration: underline;
+    background-color: none;
     }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
@@ -2023,7 +2046,7 @@ ul.topnav li.icon {display: none;}
 /* ============== FOOTER  - DESKTOP ===============*/
 
 .footer {
-    background:#f0f0f0;
+    background:#fff;
     padding: 1% 0 0 0;
     width:90%;
     margin: 0 5% 0 5%; 
@@ -2037,20 +2060,19 @@ ul.topnav li.icon {display: none;}
     padding: 0 0 0 0;
 }
 
-
 .social i {
+    font-size: 2.2em;
     padding: 2% 2% 2% 2%;
     color: #092c58;
+
+}.social i:hover{
+    color: #3f8fe6;
 }
 
 .social a {
-font-size: 1.2em; /* size of social icons*/
+font-size: 1em; /* size of social icons*/
 }
     
-.social a:hover {
-    color:#fff;
-}
-
 .footer-nav {
     padding: 0 0 2% 0;  
 }
@@ -2181,13 +2203,13 @@ font-size: 1.2em; /* size of social icons*/
 .home-cta a {
     width:100%;
     text-align: center;
-    text-decoration: none;
+    text-decoration: #fff;
     padding: 2% 5% 2% 5%;
-    background: none;
+    background: #fff;
     font-size: 1.2em;
     font-family: 'Julius Sans One';
     font-weight: 700;
-    color:#fff;
+    color:none;
     text-transform:uppercase;
     border: 2px #fff solid; 
     box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -2196,9 +2218,9 @@ font-size: 1.2em; /* size of social icons*/
 }
 
 .home-cta a:hover {
-    background: #092c58;
+    background: none;
     color:#fff;
-    border: 2px #092c58 solid; 
+    border: 2px #fff solid; 
 
     -webkit-transition: all 500ms ease; /* slows down hover effect*/
     -moz-transition: all 500ms ease;
@@ -2281,7 +2303,7 @@ font-size: 1.2em; /* size of social icons*/
     font-weight: 400;
     color:#fff;
     letter-spacing: 1.5px;
-    line-height: 1.5em;
+    line-height: 1.8em;
     font-size: 1.3em;
 
 }
@@ -2505,12 +2527,12 @@ font-size: 1.2em; /* size of social icons*/
     width:100%;  
     margin: 0;
     background:none; 
-    padding: 0 0 8% 0;
+    padding: 0 0 3% 0;
 }
 
 .bottom h2 {
     margin:0 5% 0 5%;
-    padding:8% 0 5% 0 ;
+    padding:4% 0 5% 0 ;
     font-family: 'Open Sans';
     color:#000;
     letter-spacing: 1.5px;
@@ -2613,8 +2635,8 @@ font-size: 1.2em; /* size of social icons*/
 .project-detail-top h1 {
     font-family: 'Merriweather';
     color: #092c58;
-    margin: 2% 0 2% 0; 
-    font-size: 3em;
+    margin: 2% 0 1% 0; 
+    font-size: 2.8em;
 }
 
 .project-detail-top h4 {
@@ -2628,7 +2650,7 @@ font-size: 1.2em; /* size of social icons*/
 
 .case-study {
     width: 80%;
-    padding: 5% 0 2% 0;
+    padding: 2% 0 2% 0;
     margin: 0 10% 0 10%;
 }
 
@@ -2665,7 +2687,7 @@ font-size: 1.2em; /* size of social icons*/
 }
 
 .project-button {
-    margin: 15% 0 0 0;
+    margin: 8% 0 0 0;
     padding: 0 0 10% 0;
 }
 
@@ -2811,6 +2833,7 @@ font-size: 1.2em; /* size of social icons*/
     float:right;
     margin: 0 10% 0 0;
 }
+    
 .contact-form {
     width:100%;
     margin: 0;
