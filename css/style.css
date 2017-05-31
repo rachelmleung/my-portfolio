@@ -268,6 +268,7 @@ ul.topnav li a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
 }
 
 /* ============== REGULAR CTA BUTTON on white ===========*/
@@ -850,6 +851,12 @@ ul.topnav li a:hover {
     padding: 5% 0 0 0;
     }
 
+.contact-details img {
+    width:100%;
+    margin:auto;
+    padding: 5% 0 0 0;
+    }
+
 .contact-details h2 {
     font-family: 'Merriweather';
     font-size: 1.2em;
@@ -904,10 +911,12 @@ ul.topnav li a:hover {
 
 .contact-question h1 {
     font-family: 'Caveat';
+    margin:0;
 }
 
 .contact-question p {
     font-family: 'Open Sans';
+    padding: 0 0 5% 0;
 }
 
 .contact-question h2 {
@@ -920,10 +929,8 @@ ul.topnav li a:hover {
     padding: 5% 0 3% 0;
 }
 
-.iframe-container {
-    width: 80%;
-    margin: 0 10% 0 10%;
-}
+
+
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -1109,6 +1116,7 @@ ul.topnav li.icon {display: none;}
 .social {
     width:100%;
     position: /*fixed*/;
+    clear: both;
     bottom:0;
     margin: 0;
     padding: 0 0 0 0;
@@ -1474,7 +1482,7 @@ font-size: 1.2em; /* size of social icons*/
     background-color: #fff;
     margin:0 0 3% 0;
     line-height: 1.8em;
-    font-size: 1.1em;
+    font-size: 1em;
     width:100%;
 }
 /*
@@ -1797,17 +1805,32 @@ font-size: 1.2em; /* size of social icons*/
 }
 
 .details-container {
-    width: 90%;
-    margin:0 5% 0 5%;
+    width: 45%;
+    margin:0 0 0 2%;
     padding: 0 0 8% 0;
+    display: inline-block;
+
 }
 
+.form-container {
+    width: 45%;
+    margin:0 2% 0 0 ;
+    display: inline-block;
+    float:right;
+}
+    
     
 .contact-details {
     width:100%;
     margin:auto;
     padding: 0 0 0 0;
     }
+    
+.contact-details img {
+    width:100%;
+    margin:0;
+    padding:0 0 0 0;
+    }  
     
 .contact-details p {
     padding: 0 0 1% 0;    
@@ -1819,9 +1842,6 @@ font-size: 1.2em; /* size of social icons*/
     width: 90%;
 }
 
-.contact-details img {
-    padding: 3% 0 3% 0;
-}
 
 .contact-details h2 {
     font-family: 'Merriweather';
@@ -1863,11 +1883,36 @@ font-size: 1.2em; /* size of social icons*/
     border: 2px solid #3f8fe6;
 }
    
+.contact-question {
+    width: 94%;
+    margin: 0 3% 0 3%;
+    
+}
+
+.contact-question h1 {
+    font-family: 'Caveat';
+    line-height: 1em;
+    font-size: 1.6em;
+}
+
+.contact-question p {
+    font-family: 'Open Sans';
+    font-size: 1em;
+}
+
+.contact-question h2 {
+    font-family: 'Caveat';
+}
     
 .contact-form {
     width:60%;
     margin: 0 20% 0 20%;
     padding: 3% 0 3% 0;
+}
+    
+.iframe-container {
+    width: 90%;
+    margin: 0 5% 0 5%;
 }
 
 input[type=text], select {
@@ -1942,7 +1987,7 @@ input[type=submit]:hover {
     -o-background-size: cover;
     background-size: cover;
     /* width: 100%; ---- horizontal scroll EW */
-    overflow: scroll; /* change to scroll for desktop */
+    overflow-x: hidden;
 }
 
 main {
@@ -2277,11 +2322,12 @@ font-size: 1em; /* size of social icons*/
     font-family: 'Open Sans';
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .skill p {
     font-family: 'Open Sans';
+    font-size: 1.2em;
     text-align: center;
     margin: 0 5% 0 5%;
     padding: 0 0 0 0;
@@ -2426,7 +2472,7 @@ font-size: 1em; /* size of social icons*/
     background-color: #fff;
     margin:0 10% 3% 10%;
     line-height: 1.8em;
-    font-size: 1.1em;
+    font-size: 1.2em;
     width:80%;
 }
 
@@ -2494,7 +2540,7 @@ font-size: 1em; /* size of social icons*/
     background-color: #fff;
     margin:0 0 3% 0;
     line-height: 1.8em;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .about-design h3 {
@@ -2521,6 +2567,7 @@ font-size: 1em; /* size of social icons*/
     padding: 0 2% 8% 2%;
     background-color: #fff;
     margin:0 0 3% 0;   
+    font-size: 1.2em;
 }
 
 .bottom {
@@ -2666,7 +2713,7 @@ font-size: 1em; /* size of social icons*/
 .case-study p {
     font-family:'Open Sans';
     background-color: #fff;
-    font-size:1em;
+    font-size:1.2em;
     line-height: 1.7em;
     padding: 0 0 2% 0;
 }
@@ -2783,7 +2830,7 @@ font-size: 1em; /* size of social icons*/
 }
 
 .contact-details img {
-    padding: 3% 0 3% 0;
+    padding: 0 0 3% 0;
 }
 
 .contact-details h2 {
@@ -2795,7 +2842,7 @@ font-size: 1em; /* size of social icons*/
 .contact-details p {
     font-family: 'Open Sans';
     width: 100%;
-    font-size: 1.1em;
+    font-size: 1.2em;
 
 }
 
@@ -2840,6 +2887,28 @@ font-size: 1em; /* size of social icons*/
     padding: 3% 0 3% 0;
 }
 
+.contact-question {
+    width: 94%;
+    margin: 0 3% 0 3%;
+    
+}
+
+.contact-question h1 {
+    font-family: 'Caveat';
+    line-height: 1em;
+    font-size: 2.4em;
+}
+
+.contact-question p {
+    font-family: 'Open Sans';
+    font-size: 1.2em;
+}
+
+.contact-question h2 {
+    font-family: 'Caveat';
+}
+    
+    
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
