@@ -219,7 +219,6 @@ ul.topnav li a:hover {
     text-align: center;
     margin: 0 15% 0 0;   
     padding: 0 0 1% 0;
-
 }
 
 .footer-nav ul li a {
@@ -261,7 +260,8 @@ ul.topnav li a:hover {
     color:#cbcaca;    
 }
 
-/* ============= BACKGROUND ============= */
+/* ============= BACKGROUND --- MOBILE ============= */
+
 #home-background {
 	background: url('../img/P7260240.JPG')no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -308,7 +308,6 @@ ul.topnav li a:hover {
 }
 
 /* ============= HOME PAGE ============= */
-
 
 .name {
 }
@@ -493,7 +492,7 @@ ul.topnav li a:hover {
 }
     
 .sf h2 {
-    font-family:'Caveat';
+    font-family:'Caveat'; /* web designer, developer and marketer */
     color: #000000;
     font-size: 2em;
     text-align:center;
@@ -501,7 +500,7 @@ ul.topnav li a:hover {
     padding: 3% 0 0 0;
 }
 
-.sf h1 {
+.sf h1 { /* not being used */
     font-family:'Caveat';
     color: #000000;
     font-size: 3em;
@@ -532,88 +531,7 @@ ul.topnav li a:hover {
     margin:0 3% 3% 3%;
 }
 
-/*.resume {
-    width:50%;
-    padding: 5% 0 5% 0;
-    margin: 0 25% 0 25%;
-}
-.resume-icon {
-    display: inline-block;
-    margin: 0 0 0 3%;
-}
-
-.resume-icon i {
-    font-size: 3em;
-
-}
-
-.resume-icon a {
-    background: none;
-    color:#3f8fe6;
-
-}
-
-/*.resume-icon a:hover {
-    background: none;
-    color:#092c58;
-
-    -webkit-transition: all 500ms ease; /* slows down hover effect*/
-  /*  -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-}*/
-/*
-
-.resume-cta {
-    width:20%;
-    display: inline-block;
-}
-.resume-cta a {
-    width:;
-    text-align: left;
-    text-decoration: none;
-    padding: 7% 8% 2% 8%;
-    background: none;
-    font-size: 1em;
-    font-family: 'Julius Sans One';
-    font-weight: 700;
-    color:#3f8fe6;
-    text-transform:uppercase;
-    /*border: 2px #333 solid; */
-    /*box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
-}
-
-.about-design p {
-    font-family:'Open Sans';
-    padding: 0 2% 0 2%;
-    background-color: #fff;
-    margin:0 0 3% 0;   
-}
-
-
-
-/*.resume-cta a:hover {
-    background: none;
-    color:#092c58;
-
-    -webkit-transition: all 500ms ease; /* slows down hover effect*/
-  /*  -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-}*/
-
-
-/*.about-background p {
-    font-family:'Open Sans';
-    font-weight: 400;
-    padding: 0 2% 8% 2%;
-    background-color: #fff;
-    margin:0 0 3% 0;   
-}*/
-
-.bottom {
+.bottom { /* view my work CTA */
     width:100%;  
     margin: 0;
     background:none; 
@@ -639,7 +557,7 @@ ul.topnav li a:hover {
     padding: 3% 0 0 0;
 }
 
-.portfolio h1 {
+.portfolio h1 { /* POrtfolio header */
     font-family: 'Caveat';
     font-size: 4em;
     margin: 0 0 0 0;
@@ -647,28 +565,17 @@ ul.topnav li a:hover {
     
 }
 
-.portfolio h3 {
+.portfolio h3 { /* POrtfolio subheader */
     font-family:'Julius Sans One';
     font-size: 1em;
     margin: 0 0 8% 0;
     text-align: center;
 }
 
-.section-title h3 { 
-    width:100%;
-    font-family: 'Julius Sans One';
-    color: #000;
-    background:#fff;
-    font-size: 1.2em;
-    text-align: left;
-    margin-left: 2%;
-}
-
 .portfolio-feed {
     margin:0;
     width:98%;
 }
-
 
 .project-preview img {
     width: 98%;
@@ -822,7 +729,7 @@ ul.topnav li a:hover {
 /* -------------------- Contact Page - MOBILE ---------------- */
 
 
-.contact h1 {
+.contact h1 {  /* Contact header */
     font-family: 'Caveat';
     font-size: 4em;
     margin: 0 0 0 0;
@@ -831,14 +738,14 @@ ul.topnav li a:hover {
     
 }
 
-.contact h3 {
+.contact h3 { /* Contact subheader */
     font-family:'Julius Sans One';
     font-size: 1em;
     margin: 0 0 5% 0;
     text-align: center;
 }
 
-.details-container {
+.details-container { /* left pic section */
     width: 94%;
     margin:0 3% 5% 3%;
     padding: 0 0 8% 0;
@@ -857,52 +764,9 @@ ul.topnav li a:hover {
     padding: 5% 0 0 0;
     }
 
-.contact-details h2 {
-    font-family: 'Merriweather';
-    font-size: 1.2em;
-    width: 100%;
-    }
-
-.contact-details p {
-    font-family: 'Open Sans';
-    font-size: 1em;
-    width: 100%;
-    padding: 0 0 2% 0
+.form-container { /* right section */
+    
 }
-
-.detail-button {
-    width:70%;
-    margin: 2% 15% 0 15%;
-}
-
-.detail-button a {
-    width:100%;
-    text-align: center;
-    text-decoration: none;
-    padding: 7% 8% 7% 8%;
-    background: #092c58;
-    font-size: 1em;
-    font-family: 'Julius Sans One';
-    font-weight: 700;
-    color:#fff;
-    text-transform:uppercase;
-    /*border: 2px #333 solid; */
-    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.detail-button a:hover {
-    background: #3f8fe6;
-    color:#fff;
-    opacity: 80%;
-
-    -webkit-transition: all 500ms ease; /* slows down hover effect*/
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500mdetail-button 
-
-}
- 
 .contact-question {
     width: 94%;
     margin: 0 3% 0 3%;
@@ -923,50 +787,6 @@ ul.topnav li a:hover {
     font-family: 'Caveat';
 }
 
-.contact-form {
-    width:96%;
-    margin: 0 0 0 0;
-    padding: 5% 0 3% 0;
-}
-
-
-
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    background-color: #4d9cee;
-    font-family: 'Julius Sans One';
-    font-size: 1em;
-    color: #fff;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 1px;
-    box-sizing: border-box;
-}
-
-#message input[type=text] {
-    height: 150px;
-    overflow: auto;
-    
-} 
-
-input[type=submit] {
-    width: 100%;
-    background-color: #092c58;
-    font-family: 'Julius Sans One';
-    font-size: 1em;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 1px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #0f3667;
-}
 
 /* ------ Rules to allow color change of placeholder text ------- */
 
@@ -1405,23 +1225,6 @@ font-size: 1.2em; /* size of social icons*/
    padding: 0 0 3% 0; 
 }
 
-/*.section-header h1 {
-    font-family:'Caveat';
-    font-size: 4em;
-    color: #000;
-    text-align:center;
-    margin: 5% 0 0 0;
-    padding:0;
-    text-transform: none;
-} 
-
-.section-header h3 {
-    font-family:'Julius Sans One';
-    font-size: 1em;
-    margin: 0 0 5% 0;
-    padding:0; 
-    text-align:center;
-}*/
 
 .intro-img {
     width: 200px;
