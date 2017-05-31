@@ -640,7 +640,7 @@ ul.topnav li a:hover {
 .project-detail-top h4 {
     font-family: 'Open Sans';
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1.2em;
     color:#3f8fe6;
     padding: 0 0 5% 0;
     margin: 0 0 5% 0;
@@ -654,8 +654,9 @@ ul.topnav li a:hover {
 
 
 .case-study h2 {
-    font-family: 'Julius Sans One';
-    font-size: 1.2em;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-size: 1.1em;
     padding: 0;
     margin: 0;
     color:#333;
@@ -1354,7 +1355,7 @@ font-size: 1.2em; /* size of social icons*/
     
 
 .project-preview h4 {
-    font-family: 'Julius Sans One';
+    font-family: 'Open Sans';
     font-size: 1em;
     width:100%;
     color:#333;
@@ -1408,7 +1409,8 @@ font-size: 1.2em; /* size of social icons*/
 
 
 .case-study h2 {
-    font-family: 'Julius Sans One';
+    font-family: 'Open Sans';
+    text-transform: uppercase;
     padding: 0;
     margin: 0;
     color:#333;
@@ -2132,13 +2134,13 @@ font-size: 1em; /* size of social icons*/
     font-family: 'Merriweather';
     color: #092c58;
     margin: 3% 0 3% 0; 
-    font-size: 1.1em;
+    font-size: 1.6em;
 }
     
 
 .project-preview h4 {
-    font-family: 'Julius Sans One';
-    font-size: 1em;
+    font-family: 'Open Sans';
+    font-size: 1.3em;
     width:100%;
     color:#333;
     
@@ -2159,8 +2161,8 @@ font-size: 1em; /* size of social icons*/
     margin: 0 5% 0 5%;
 }
 .project-img{
-    width:80%;
-    margin: 0 10% 0 10%;
+    width:74%;
+    margin: 0 13% 0 13%;
     
     }
 .project-img img {
@@ -2199,7 +2201,8 @@ font-size: 1em; /* size of social icons*/
 
 
 .case-study h2 {
-    font-family: 'Julius Sans One';
+    font-family: 'Open Sans';
+    text-transform: uppercase;
     padding: 0;
     margin: 0;
     color:#333;
@@ -2221,7 +2224,7 @@ font-size: 1em; /* size of social icons*/
 .case-study ul li {
     font-family:'Open Sans';
     background-color: #fff;
-    font-size:1em;
+    font-size:1.2em;
     line-height: 1.7em;
 }   
 
