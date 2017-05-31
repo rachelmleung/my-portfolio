@@ -2000,23 +2000,6 @@ font-size: 1em; /* size of social icons*/
    padding: 0 0 4% 0; 
 }
 
-/*.section-header h1 {
-    font-family:'Caveat';
-    font-size: 4em;
-    color: #000;
-    text-align:center;
-    margin: 5% 0 0 0;
-    padding:0;
-    text-transform: none;
-} 
-
-.section-header h3 {
-    font-family:'Julius Sans One';
-    font-size: 1em;
-    margin: 0 0 5% 0;
-    padding:0; 
-    text-align:center;
-}*/
 
 .intro-img {
     width: 300px;
@@ -2082,99 +2065,6 @@ font-size: 1em; /* size of social icons*/
     width:80%;
 }
 
-.resume {
-    width:50%;
-    padding: 5% 0 5% 0;
-    margin: 0 25% 0 25%;
-}
-.resume-icon {
-    display: inline-block;
-    margin: 0 0 0 25%;
-}
-
-.resume-icon i {
-    font-size: 3em;
-
-}
-
-.resume-icon a {
-    background: none;
-    color:#3f8fe6;
-
-}
-
-/*.resume-icon a:hover {
-    background: none;
-    color:#092c58;
-
-    -webkit-transition: all 500ms ease; /* slows down hover effect*/
-  /*  -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-}*/
-
-
-/*.resume-cta {
-    width:20%;
-    display: inline-block;
-    align-content:left;
-}
-.resume-cta a {
-    width:;
-    text-align: left;
-    text-decoration: none;
-    padding: 5% 8% 5% 8%;
-    background: none;
-    font-size: 1.2em;
-    font-family: 'Julius Sans One';
-    font-weight: 700;
-    color:#3f8fe6;
-    text-transform:uppercase;
-    /*border: 2px #333 solid; */
-    /*box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-*/
-    
-.about-design {
-
-    }
-    
-.about-design p {
-    font-family:'Open Sans';
-    padding: 0;
-    background-color: #fff;
-    margin:0 0 3% 0;
-    line-height: 1.8em;
-    font-size: 1.2em;
-}
-
-.about-design h3 {
-    margin:0;
-    padding: 0 0 2% 0;
-}
-
-
-
-/*.resume-cta a:hover {
-    background: none;
-    color:#092c58;
-
-    -webkit-transition: all 500ms ease; /* slows down hover effect*/
-  /*  -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-}*/
-
-
-.about-background p {
-    font-family:'Open Sans';
-    padding: 0 2% 8% 2%;
-    background-color: #fff;
-    margin:0 0 3% 0;   
-    font-size: 1.2em;
-}
 
 .bottom {
     width:100%;  
@@ -2410,88 +2300,33 @@ font-size: 1em; /* size of social icons*/
     text-align: center;
 }
 
-.details-container {
+.details-container { /* left side pic */
     width: 36%;
     margin:0 0 0 10%;
     padding: 0 0 8% 0;
     display: inline-block;
 
 }
-
-    
+ 
 .contact-details {
     width:100%;
     margin:auto;
     padding: 0 0 0 0;
     }
     
-.contact-details p {
-    padding: 0 0 1% 0;    
-    }
-
-.contact-line {
-    border-color: #092c58;
-    margin: 0 5% 15px 5%;
-    width: 90%;
-}
 
 .contact-details img {
     padding: 0 0 3% 0;
 }
 
-.contact-details h2 {
-    font-family: 'Merriweather';
-    font-size: 1.2em;
-    width: 100%;
-    }
-
-.contact-details p {
-    font-family: 'Open Sans';
-    width: 100%;
-    font-size: 1.2em;
-
-}
-
-.detail-button {
-    margin: 3% 0 3% 0;
-    padding: 0 0 0 0;
-}
-
-.detail-button a {
-    width:100%;
-    text-align: center;
-    text-decoration: none;
-    padding: 5% 8% 5% 8%;
-    background: #092c58;
-    font-size: 1.2em;
-    font-family: 'Julius Sans One';
-    color:#fff;
-    text-transform:uppercase;
-    border: 2px solid #092c58;
-    /*border: 2px #333 solid; */
-    box-shadow: -8px 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-
-.detail-button a:hover {
-    background: #3f8fe6;
-    color:#fff;
-    border: 2px solid #3f8fe6;
-}
    
-   
-.form-container {
+.form-container { /* right side container */
     width:36%;
     display: inline-block;
     float:right;
     margin: 0 10% 0 0;
 }
     
-.contact-form {
-    width:100%;
-    margin: 0;
-    padding: 3% 0 3% 0;
-}
 
 .contact-question {
     width: 94%;
@@ -2514,44 +2349,7 @@ font-size: 1em; /* size of social icons*/
     font-family: 'Caveat';
 }
     
-    
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    background-color: #4d9cee;
-    font-family: 'Julius Sans One';
-    font-size: 1.1em;
-    color: #fff;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 1px;
-    box-sizing: border-box;
-}
-
-#message input[type=text] {
-    height: 300px;
-    overflow: auto;
-    
-} 
-
-input[type=submit] {
-    width: 100%;
-    background-color: #092c58;
-    font-family: 'Julius Sans One';
-    font-size: 1.3em;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 1px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #0f3667;
-}
-
+ 
 /* ------ Rules to allow color change of placeholder text ------- */
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
